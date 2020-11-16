@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ご利用ガイド｜Mac専門店 秋葉館.com</title>
+
+<link href="/images/upload/top/favicon.ico" type="image/x-icon" rel="shortcut icon">
+
+<link rel="stylesheet" href="http://www.akibakan.com/article/css/base.css" type="text/css" />
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+
+<script type="text/javascript">
+$(function() {
+	$("input").css('color', '#999');
+	var input_val = [];
+	$("input").each(function() {
+		input_val.push($(this).val());
+	});
+	$("input").focus(function() {
+		var chk_num = $("input").index(this);
+		var chk_val = $("input").eq(chk_num).val();
+		if(chk_val == input_val[chk_num]) {
+			var def_val = $(this).val();
+			$(this).val('');
+			$(this).css('color', '#333');
+			$(this).blur(function() {
+				if($(this).val() == '') {
+					$(this).val(def_val);
+					$(this).css('color', '#999');
+				}
+			});
+		}
+	});
+});
+</script>
+
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<link href="http://www.akibakan-us.com/article/thickbox/colorbox.css" rel="stylesheet" />
+<script src="http://www.akibakan-us.com/article/thickbox/jquery.colorbox.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+		//Examples of how to assign the ColorBox event to elements
+		$(".thickbox").colorbox({rel:'thickbox', transition:"none", width:"auto", height:"95%"});
+		//Example of preserving a JavaScript event for inline calls.
+		$("#click").click(function(){ 
+			$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+			return false;
+		});
+	});
+</script>
+
+<!-- Scroll -->
+<script type="text/javascript" src="/article/js/jquery.page-scroller.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-450406-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div id="container">
+	<div id="wrap" class="clearfix">
+		<!-- header block ########################################################## -->
+		 <!-- ヘッダ -->
+<script language="JavaScript">
+<!--
+
+   function chkISeekKey()
+   {
+     var limit = 3;
+     if( document.itemSearch.keyword.value == "" ){
+	    return false;
+	 }
+	 if( document.itemSearch.keyword.value.length < limit ){
+        alert("商品検索のキーワードは" + limit + "文字以上でご指定下さい");
+	    return false;
+	 }
+	 return true;
+   }
+//-->
+</script>
+
+<script language="JavaScript">
+<!--
+   function akibaLogout()
+   {
+     if(window.confirm("ログアウトします。よろしいですか？")){
+       location.href="javascript: submitTransition('/mypage/logout.html');";
+     } else {
+     }
+   }
+//-->
+</script>
+
+<script language="JavaScript">
+<!--
+
+   function ISeekKeySet5(keyval)
+   {
+	    document.itemSearch.keyword.value = keyval;
+        document.itemSearch.submit();
+   }
+//-->
+</script>
+
+<script type="text/javascript">
+<!--
+	function submitTransition(uri){document._form_header.action=uri;document._form_header.submit();}
+	function chgImgImageSubmit(fileName,imgObj){imgObj.src = fileName;}
+//-->
+</script>
+
+<form name="_form_header" action="/" method="post">
+	<input type="hidden" name="_RETPAGE_" value="/guide/index.html" />
+</form>
+
+<!-- ▼ ヘッダー開始 -->
+<div id="header" style="width: 980px;">
+	<!-- ▼ 秋葉館ショップロゴ -->
+	<div id="header-rogo">
+		<a href="/" target="_top"><IMG style="MARGIN-RIGHT: 10px" alt=秋葉館オンラインショップ src="/images/upload/embed/akibakan-logo.gif" width="140" height="64"></a><br clear="all" />
+		<img src="/images/upload/embed/apple-logo.gif" width="140" height="25" style="margin-top: 11px;" />
+	</div>
+
+
+	<div id="header-inform">
+		<div id="header-inform-top" class="clearfix">
+			<div id="header-userlogin">
+										<!-- ログアウト状態時 -->
+						<b>いらっしゃいませ。</b><br />会員の方は<b><a href="javascript: submitTransition('/mypage/');">ログイン</a></b>してください。&nbsp;&nbsp;&nbsp;&nbsp;- <b><a href="javascript: submitTransition('/mypage/profile/');">新規会員登録</a></b>。
+								</div>
+			
+			<div id="header-information">
+				<a href="http://www.akibakan.com/guide/index.html">ご利用ガイド</a>｜
+				<a href="javascript: submitTransition('/mypage/favorite/');">お気に入り</a> ｜
+				<a href="javascript: submitTransition('/mypage/history/');">購入履歴</a> ｜
+				<!--<a href="javascript: submitTransition('/mypage/address/');">アドレス帳</a> ｜-->
+				<a href="http://www.akibakan.com/guide/shoplist/index.html">店舗案内</a> 
+			</div>
+		</div>
+
+
+		<div id="header-inform-bottom" class="clearfix">
+			<form name="itemSearch" method="post" action="/search.html" onSubmit="return chkISeekKey();">
+				<b>商品検索</b>　　
+				<input name="keyword" type="text" maxlength="50" value="" id="keyword">&nbsp;&nbsp;
+				<input TYPE="submit" VALUE="　検索　" name="_btn_search" id="button">
+				<input type="hidden" name="operation" value="search" />
+			</form>
+			
+			<div id="header-cart-button">
+				<a href="javascript: submitTransition('/cart/');"><span>カートの中を見る</span></a>
+			</div>
+		</div>
+		
+
+		<div id="header-bottom-menu" class="clearfix">
+			<ul>
+				<li><a href="http://www.akibakan.com/mac_memory_typeselect/">メモリー交換</a></li>
+				<li><a href="http://www.akibakan.com/model_internal_hdd/">ハードディスク交換</a></li>
+				<li><a href="http://www.akibakan.com/display_related/videocard/">ビデオカード交換</a></li>
+				<li><a href="http://www.akibakan.com/guide/wage/index.html">取付工賃について</a></li>
+				<li><a href="http://support.akibakan.com/kaitori.html?top-banner" target="_blank">中古Mac買取</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- ▲ ヘッダー -->
+
+		
+		<!-- contents block ########################################################## -->
+		<div id="contents">
+			
+			
+			<!-- center blorck ########################################################## -->
+			<div id="help-block">
+		
+			<div id="pan"><a href="http://www.akibakan.com/">TOP</a> > <b>秋葉館を装った悪質な偽のWEBサイトにご注意ください</b></div>
+			<h1 id="category-name">秋葉館を装った悪質な偽のWEBサイトにご注意ください</h1>
+				<div class="help-box">
+				<p>
+					株式会社センチュリーが運営するMac専門店「秋葉館」のWEBサイトから無断で画像や情報、店舗名などを使用している偽のWEBサイトの存在を確認致しました。<br />
+					被害報告は現在（2013/9/13時点）ではございませんが、他店舗でECサイトを運営している企業様より被害報告が挙げられております。<br />
+					偽のWEBサイトで商品を購入されても、株式会社センチュリー「秋葉館」での保証は一切ございませんのでご注意ください。 </p>
+				</div>
+	
+				<a id="01"></a>
+				<h2>偽のWEBサイトの特徴</h2>
+				<div class="help-box">
+					<ul>
+						<li>商品の販売価格が極端に安い。</li>
+						<li>支払方法が銀行振込のみとなっている。</li>
+						<li>代金振込先の銀行口座名義が個人名義になっている。<</li>
+						<li>連絡先電話番号の記載がない。または「090」や「080」などから始まる携帯電話の番号が使われている。</li>
+						<li>説明文等、おかしい日本語表現が使われている。 </li>
+					</ul>
+				</div>
+
+				<h2>株式会社センチュリーが運営する物販サイトのドメイン</h2>
+				<div class="help-box">
+					<p> ※上記以外のサイトで物販を行っていないブログやFacebook、Twitterなどございます。</p>
+					<p><b>自社サイトで運営するショッピングサイト</b></p>
+					<ul>
+						<li>秋葉館 ダイレクトショップ ( http://www.akibakan.com/ )</li>
+						<li>DO-夢 ( http://www.at-mac.com/ )</li>
+						<li>プロレス＆Rockショップ BACKDROP( http://www.b-drop.com/ )</li>
+						<li>航空ファン専門店 TOPxGUN ( http://www.top-gun.jp/ ) </li>
+						<li>センチュリーダイレクト ( http://www.century-direct.net/ )</li>
+						<li>センチュリーアウトレット ( http://www.century-outlet.jp/ )</li>
+						<li>白箱.com ( http://www.sirobako.com/ )</li>
+					</ul>
+					<br />
+
+					<p><b>楽天市場・ショッピングサイト</b></p>
+					<ul>
+						<li>秋葉館 楽天市場店（ http://item.rakuten.co.jp/akibakan/ )</li>
+						<li>DO-夢 楽天市場店 （ http://item.rakuten.co.jp/do-mu/ )</li>
+						<li>ホビーショップバックドロップ 楽天市場店 （ http://item.rakuten.co.jp/b-drop/ )</li>
+						<li>航空ファン専門店 TOPxGUN 楽天市場店 （ http://item.rakuten.co.jp/topgun/ ) </li>
+						<li>センチュリーダイレクト 楽天市場店 （ http://item.rakuten.co.jp/century-direct/ )</li>
+						<li>白箱.com  楽天市場店（ http://item.rakuten.co.jp/sirobako/ )</li>
+					</ul>
+					<br />
+
+					<p><b>Amazon・ショッピングサイト</b></p>
+					<ul>
+						<li>
+							sirobako(白箱）ドットコム<br />
+							（ http://www.amazon.co.jp/gp/browse.html?ie=UTF8&marketplaceID=A1VC38T7YXB528&me=A3R72BR62JS42T ) 
+						</li>
+					</ul>
+					<br />
+
+					<p><b>Yahooオークション・ショッピングページドメイン</b></p>
+					<ul>
+						<li>センチュリーヤフーショップ ( http://storeuser9.auctions.yahoo.co.jp/jp/user/kashiwadomu ) </li>
+					</ul>
+					<br />
+					
+					<p>
+						以上、ドメインをよくご確認頂き不安がある場合はお問い合わせ頂きますようお願い致します。<br />
+						上記以外で偽のWEBサイトに株式会社センチュリーが運営する「秋葉館」の表記があっても関連性はございませんのでご注意下さい。
+					</p>
+					<br />
+					<br />
+					
+					<p align="right">株式会社センチュリー　秋葉館<br />2013年9月</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- left bock ########################################################## -->
+		<div id="left-block" class="clearfix">
+			<!-- category menu ########################################################## -->
+			<div id="left-menu">				
+				<div class="category">
+					<h2><p><a href="http://www.akibakan.com/guide/index.html"><strong>ご利用ガイド</strong></a></p></h2>
+					<ul>
+						<li><b><a href="/guide/order/index.html">ご注文について</a></b></li>
+							<p><a href="/guide/order/index.html#01">注文方法について</a></p>
+							<p><a href="/guide/order/index.html#03">在庫確保について</a></p>
+							<p><a href="/guide/order/index.html#04">商品の取置きについて</a></p>
+							<p><a href="/guide/order/index.html#05">予約商品の注文について</a></p>
+							<p><a href="/guide/order/index.html#06">注文状況について</a></p>
+						<br />
+						
+
+						<li><b><a href="/guide/payment/index.html">お支払について</a></b></li>
+							<p><a href="/guide/payment/index.html#01">お支払方法について</a></p>
+							<p><a href="/guide/payment/index.html#02">お支払期限について</a></p>
+						<br />
+
+
+						<li><b><a href="/guide/warranty/index.html">保証について</a></b></li>
+							<p><a href="/guide/warranty/index.html#01">保証の対象について</a></p>
+							<p><a href="/guide/warranty/index.html#02">保証の除外事項について</a></p>
+							<p><a href="/guide/warranty/index.html#03">保証書について</a></p>
+							<p><a href="/guide/warranty/index.html#04">保証期間について</a></p>
+							<p><a href="/guide/warranty/index.html#05">初期不良について</a></p>
+							<p><a href="/guide/warranty/index.html#06">修理について</a></p>
+							<p><a href="/guide/warranty/index.html#07">修理期間について</a></p>
+							<p><a href="warranty/index.html#09">マイナンバーの取り扱いについて</a></p>
+							<p><a href="warranty/index.html#08">初期不良・修理についてのお問合せ</a></p>
+						<br />
+
+						<li><b><a href="/guide/deliver/index.html">お届けについて</a></b></li>
+							<p><a href="/guide/deliver/index.html#01">配送業者について</a></p>
+							<p><a href="/guide/deliver/index.html#02">配送料金について</a></p>
+							<p><a href="/guide/deliver/index.html#03">送料無料商品について</a></p>
+							<p><a href="/guide/deliver/index.html#04">商品の発送について</a></p>
+							<p><a href="/guide/deliver/index.html#05">お取り寄せ商品の発送について</a></p>
+							<p><a href="/guide/deliver/index.html#06">配送希望日時について</a></p>
+							<p><a href="/guide/deliver/index.html#07">配送状況の確認について</a></p>
+							<p><a href="/guide/deliver/index.html#08">お届け先変更について</a></p>
+						<br />
+						
+						
+						<li><b><a href="/guide/return/index.html">交換・返品について</a></b></li>
+							<p><a href="/guide/return/index.html#01">交換について</a></p>
+							<p><a href="/guide/return/index.html#02">返品について</a></p>
+							<p><a href="/guide/return/index.html#03">お客様都合による交換・返品について</a></p>
+							<p><a href="/guide/return/index.html#04">交換・返品の除外について</a></p>
+							<p><a href="/guide/return/index.html#05">交換・返品手続きの流れについて</a></p>
+							<p><a href="/guide/return/index.html#06">返金について</a></p>
+						<br />
+						
+						<li><b><a href="/guide/wage/index.html#01">パーツの取り付けについて</a></b></li>
+							<p><a href="/guide/wage/index.html#02">店頭へのお持ち込みについて</a></p>
+							<p><a href="/guide/wage/index.html#03">発送でのご依頼について</a></p>
+							<p><a href="/guide/wage/index.html#04">複数同時作業について</a></p>
+							<p><a href="/guide/wage/index.html#14">取り付け工賃のお見積りについて</a></p>
+							<p><a href="/guide/wage/index.html#05">取り付け工賃表</a></p>
+						<br />
+
+						<li><b><a href="/guide/shoplist/index.html">店舗案内/お問合せ</a></b></li>
+							<p><a href="/guide/shoplist/index.html#01">店舗情報</a></p>
+							<p><a href="/guide/shoplist/index.html#02">メールでのお問合せについて</a></p>
+							<p><a href="/guide/shoplist/index.html#03">電話でのお問合せについて</a></p>
+						<br />
+
+						<li><b><a href="/guide/purchase/index.html">買い取りについて</a></b></li>
+							<p><a href="/guide/purchase/index.html#01">買い取りの受付について</a></p>
+							<p><a href="/guide/purchase/index.html#02">買い取りの際に必要なもの</a></p>
+							<p><a href="/guide/purchase/index.html#03">買取をご依頼いただく際の注意事項</a></p>
+							<p><a href="/guide/purchase/index.html#04">買い取り金額について</a></p>
+							<p><a href="/guide/purchase/desktop.html">買い取り価格</a></p>
+							<p><a href="/guide/purchase/index.html#05">お持ち込みでの買い取りについて</a></p>
+							<p><a href="/guide/purchase/index.html#06">査定時間について</a></p>
+							<p><a href="/guide/purchase/index.html#07">発送での買い取りについて</a></p>
+							<p><a href="/guide/purchase/index.html#08">発送時の製品の梱包について</a></p>
+							<p><a href="/guide/purchase/index.html#09">買い取りの不成立について</a></p>
+							<p><a href="/guide/purchase/index.html#10">買取成立後の返却について</a></p>
+						<br />
+						
+						<li><b><a href="/guide/help-terms.html">ご利用規約</a></b></li>
+							<p><a href="/guide/help-terms.html">秋葉館ご利用規約</a></p>
+							<p><a href="/guide/help-privacypolicy.html">個人情報保護方針</a></p>
+							<p><a href="/guide/help-regulation.html">特定商取引法に基づく表示</a></p>
+						<br />
+					</ul>
+				</div>
+
+			</div>
+
+	
+		</div>
+	</div>
+	
+
+	<!-- footer ########################################################## -->
+	<div id="footer"><!-- フッタ -->
+<div id="footer">Copyright (C) 
+<?php
+echo date("Y");
+?>
+ Mac専門店 秋葉館.com [akibakan.com] All Rights Reserved.</div></div>
+</div>
+
+</body>
+</html>
+

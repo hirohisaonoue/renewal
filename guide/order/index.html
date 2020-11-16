@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ご注文について｜Mac専門店 秋葉館.com</title>
+
+<link href="/images/upload/top/favicon.ico" type="image/x-icon" rel="shortcut icon">
+
+<link rel="stylesheet" href="http://www.akibakan.com/article/css/base.css" type="text/css" />
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+
+<script type="text/javascript">
+$(function() {
+	$("input").css('color', '#999');
+	var input_val = [];
+	$("input").each(function() {
+		input_val.push($(this).val());
+	});
+	$("input").focus(function() {
+		var chk_num = $("input").index(this);
+		var chk_val = $("input").eq(chk_num).val();
+		if(chk_val == input_val[chk_num]) {
+			var def_val = $(this).val();
+			$(this).val('');
+			$(this).css('color', '#333');
+			$(this).blur(function() {
+				if($(this).val() == '') {
+					$(this).val(def_val);
+					$(this).css('color', '#999');
+				}
+			});
+		}
+	});
+});
+</script>
+
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<link href="http://www.akibakan-us.com/article/thickbox/colorbox.css" rel="stylesheet" />
+<script src="http://www.akibakan-us.com/article/thickbox/jquery.colorbox.js"></script>
+
+<script>
+	$(document).ready(function(){
+		//Examples of how to assign the ColorBox event to elements
+		$(".thickbox").colorbox({rel:'thickbox', transition:"none", width:"auto", height:"95%"});
+		//Example of preserving a JavaScript event for inline calls.
+		$("#click").click(function(){ 
+			$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+			return false;
+		});
+	});
+</script>
+
+<!-- Scroll -->
+<script type="text/javascript" src="/article/js/jquery.page-scroller.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-450406-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body id="pageTop">
+
+<div id="container">
+	<div id="wrap" class="clearfix">
+		<!-- header block ########################################################## -->
+		 <? EmbedHeader();/*ヘッダ埋め込み*/?>
+
+		
+		<!-- contents block ########################################################## -->
+		<div id="contents">
+			
+			<!-- center blorck ########################################################## -->
+			<div id="help-block">
+		
+			<div id="pan"><a href="http://www.akibakan.com/">TOP</a> > <a href="/guide/index.html">ご利用ガイド</a> > <b>ご注文について</b></div>
+			<h1 id="category-name">ご注文について</h1>
+				<div class="help-eachblock clearfix">
+					<ul class="eachmenu">
+						<li><a href="#01">注文方法について</a>
+							<ul>
+									<li><a href="help-order-cart.html">カート注文について</a></li>
+									<li><a href="help-order-tel.html">電話注文について</a></li>
+							</ul>
+						</li>
+						<li><a href="#02">在庫表示について</a></li>
+						<li><a href="#03">在庫確保について</a></li>
+					</ul>
+
+					<ul class="eachmenu">
+						<li><a href="#04">商品の取置きについて</a></li>
+						<li><a href="#05">予約商品の注文について</a></li>
+						<li><a href="#06">注文状況について</a></li>
+						<li><a href="#07">キャンセルについて</a></li>
+						<li><a href="#08">領収書について</a></li>
+					</ul>
+				</div>
+				
+			
+				<a id="01"></a>
+				<h2>注文方法について</h2>
+				<div class="help-box">
+					<p>秋葉館では、以下のお支払方法がご利用いただけます。 </p>
+					<p class="px14"><b>○<a href="help-order-cart.html">ショッピングカート注文</a></b></p>
+					<img src="http://www.akibakan.com/images/upload/icon/cart-button.gif" width="173" height="114" class="border" /><br />
+					<p>商品一覧ページ、商品詳細ページに表示されている「カートに入れる」ボタンがある商品に関しては、全てショッピングカートから購入いただけます。</p>
+					<p>詳しくは「<a href="help-order-cart.html">カート注文について</a>」をご確認ください。</p>
+					<br />						
+					<p class="px14"><b>○<a href="help-order-tel.html">電話注文</a></b></p>
+					<p>商品ページに掲載されている全ての商品がお電話で注文いただけます。</p>
+					<p>詳しくは「<a href="help-order-tel.html">電話注文について</a>」をご確認ください。</p>
+					<div align="right"><a href="#pageTop">▲上へ</a></div>
+				</div>
+	
+				<a id="02"></a>
+				<h2>在庫表示について</h2>
+				<div class="help-box">
+					<p>秋葉館では、「商品一覧ページ」「商品詳細ページで」、以下の表記で在庫状況の確認ができます。 </p>
+					<table border="0">
+						<tr>
+							<th>在庫あり</th>
+
+							<td>在庫がございます。ただし店舗在庫と共有している商品もございますため、店舗で売り切れの際は在庫がご用意できない場合がございます。在庫がご用意できなかった場合は別途ご連絡をいたします。予めご了承ください。</td>
+						</tr>
+						<tr>
+							<th>在庫僅少</th>
+							<td>    在庫が少ない状態です。概ね残り1つ〜3つ程度です。ただし店舗在庫と共有されている承認の場合、店舗で売り切れの際は在庫がご用意できない場合がございます。在庫がご用意できなかった場合は別途ご連絡をいたします。予めご了承ください。</td>
+
+						</tr>
+						<tr>
+							<th>3～5日</th>
+							<td>店頭に在庫がなく、在庫更新時にメーカー在庫が潤沢で入荷まで概ね3日〜5日程度お時間を頂く商品です。それ以上日数がかかる場合やメーカーで欠品または生産終了別途ご連絡をいたします。</td>
+						</tr>
+						<tr>
+							<th>お取り寄せ </th>
+							<td>店頭に在庫がなく、注文後メーカーから取り寄せとなる商品です。入荷まで概ね5日〜30日程度お時間を頂きます。それ以上日数がかかる場合やメーカーで欠品または生産終了別途ご連絡をいたします。またご購入頂いたのち日数が経ってから納期が未定になる場合もございます。予めご了承ください。</td>
+						</tr>
+						<tr>
+							<th>予約受付中 </th>
+							<td>予約受付商品です。予約数に達し次第予約受付が終了となります。お早めにご予約ください。</td>
+						</tr>
+						<tr>
+							<th>予約受付終了</th>
+							<td>予約受付数に達した商品です。入荷予定日以降在庫がご用意できた場合は「在庫あり」の表示に変更されます。在庫数がご用意できない場合は「売り切れ」または「販売終了」となります。</td>
+						</tr>
+						<tr>
+							<th>店頭販売限定</th>
+							<td>店頭販売限定の商品です。大変申し訳ございませんが店頭へご来店ください。</td>
+						</tr>
+						<tr>
+							<th>売り切れ</th>
+							<td>在庫がありません。<br />
+								再入荷される商品につきましては、入荷の目途が立ち次第「入荷待ち」に変更となります。<br />
+								※「売り切れ」商品の入荷予定に関するお問い合わせはお受けしておりません。
+							</td>
+						</tr>
+						<tr>
+							<th>販売終了</th>
+							<td>    販売終了商品です。生産終了や取り扱い終了などの理由により入荷の予定はございません。</td>
+						</tr>
+					</table>
+					<div class="px11">
+						<p>※店頭在庫状況は１時間に一度自動定期に更新しております。</p>
+						<p>※在庫状況は確約されたものではありません。在庫状況の変動により、商品が確保できない場合がございます。 </p>
+						<p>※同じ商品を複数ご注文された場合、ご希望の商品在庫数を確保できない場合がございます。</p>
+						<p>予めご了承ください。</p>
+					</div>					
+					<div align="right"><a href="#pageTop">▲上へ</a></div>
+				</div>
+	
+				<a id="03"></a>
+				<h2>在庫確保について</h2>
+				<div class="help-box">
+					<p>商品をカートに入れた段階では在庫の確保はしておりません。</p>
+					<p>システム上の在庫は、ご注文手続き完了時点で確保いたしますが、実際の商品の在庫確保はご注文手続き完了後、<b>「【秋葉館】ご注文手続き完了のお知らせ」メールを送信した後</b>順次確保いたします。</p>
+					<div class="px11">
+						<p>※商品によってはオンラインショップの在庫と店頭在庫が共通のため、ご注文手続き中、または「【秋葉館】ご注文手続き完了のお知らせ」メール送信後商品の在庫を確保するまでの間に、店頭で商品が売れてしまった場合、在庫が確保できないことがございます。</p>
+						<p>※銀行振込、コンビニエンスストア支払いの場合、お振り込み・お支払の確認が取れ次第在庫の確保をいたします。お振り込み・お支払いに時間がかかりますと、その間に在庫がご用意できなくなる場合がございます。予めご了承ください。</p>
+						<p>※万が一在庫が確保できなかった場合はメールまたはお電話にてご連絡をいたします。</p>
+					</div>
+					<div align="right"><a href="#pageTop">▲上へ</a></div>
+				</div>
+
+				<a id="04"></a>
+				<h2>商品の取置きについて</h2>
+				<div class="help-box">
+					<p>ご注文手続き完了後、<b>「【秋葉館】ご注文手続き完了のお知らせ」メールを送信した後</b>に、在庫を確保できた商品は、お支払い手続きまでの間一定期間お取り置きをいたします。<br />
+					お取り置き期間は代金引換を除いた全てのお支払方法で、ご注文日翌日から5営業日以内となっております。</p>
+					<p class="px11">※お支払い期限が過ぎた場合、注文が自動キャンセルとなり商品の取り置きは解除となります。詳しくは「<a href="../payment/index.html#02">支払期限について</a>」をご確認ください。</p>
+					<div align="right"><a href="#pageTop">▲上へ</a></div>
+				</div>
+
+				<a id="05"></a>
+				<h2>予約商品の注文について</h2>
+				<div class="help-box">
+					<ul>
+						<li>予約受付商品は、商品詳細ページに大まかな入荷時期の記載がございます。</li>
+						<li>入荷時期は商品発表時にメーカーから提供されている目安です。実際の発売日は前後する場合がございます。</li>
+						<li>ごく稀に、商品の発売が大幅に延期となる場合がございます。</li>
+						<li>ごく稀に、メーカーの生産台数が予定より少なくなり入荷数が少量になることがございます。入荷数が予定より少量の場合は、ご予約の先着順に割り当てさせていただきます。</li>
+						<li>ごく稀に、商品の発売が中止（生産が中止）となる場合がございます。</li>
+					</ul>
+					<div align="right"><a href="#pageTop">▲上へ</a></div>
+				</div>
+
+				<a id="06"></a>
+				<h2>注文状況について</h2>
+				<div class="help-box">
+					<p>ご注文から出荷までを以下の表記でご案内しております。</p>
+					<table border="0">
+						<tr>
+							<th>ご入金確認中</th>
+							<td>お支払方法で
+								<ul>
+									<li>銀行振込</li>
+								</ul>
+								<p>をご選択されたご注文でご入金をお待ちしている状態です。<br />
+										銀行からの入金データ（一日2回 12時/15時）が届きますと在庫を確保し出荷準備にうつります。</p>
+								<p>※ご入金が確認できましたらご入金確認メールをお送り致します。</p></td>
+						</tr>
+						<tr>
+							<th>お支払手続き確認中</th>
+							<td>お支払方法で
+								<ul>
+									<li>コンビニエンスストア支払い</li>
+									<li>ショッピングローン</li>
+								</ul>
+								<p>をご選択されたご注文でお支払いまたはローン審査完了前の状態です。<br />
+										コンビニエンスストア支払い確認をご選択のお客様はコンビニエンスストアでお支払後約1時間程度で在庫準備中に変わり在庫の確保をいたします。ショッピングローンをご選択のお客様はローン会社での審査終了後在庫を確保し3日以内に出荷準備にうつります。</p>
+								<p>※お支払手続きが確認できましたら手続き完了メールをお送りいたします。</p></td>
+						</tr>
+						<tr>
+							<th>在庫確保中</th>
+							<td><p>ご購入いただきました商品の在庫を確保しております。すべての在庫がご用意出来次第出荷準備にうつります。在庫がご用意出来ない場合はご連絡いたします。詳しくは<a href="#02">在庫状況について</a>をご確認ください。<br />
+							</p>
+									<p>※在庫がご用意出来なかった際は担当部署よりメールまたはお電話にてご連絡をいたします。<br />
+									※在庫がご用意出来た際は、出荷完了のご案内までご連絡は致しません。</p></td>
+						</tr>
+						<tr>
+							<th>出荷準備中</th>
+							<td>出荷の準備をしております。</td>
+						</tr>
+						<tr>
+							<th>出荷完了（お荷物番号登録中）</th>
+							<td>出荷が完了いたしました。随時お荷物番号を登録しております。お荷物番号の登録が終わり次第「【秋葉館】ご注文商品発送のご連絡」メールをお送りいたします。</td>
+						</tr>
+						<tr>
+							<th>出荷済み</th>
+							<td><p>出荷が完了いたしました。「【秋葉館】ご注文商品発送のご連絡」メールでお送りしておりますお荷物番号より配送状況がご確認いただけます。</p>
+									<p>※出荷が完了致しましたら、出荷日の19時～21時の間に荷物番号メールをお送りいたします。</p></td>
+						</tr>
+					</table>
+					<p>ご注文の処理状況は<a href="javascript: submitTransition('/mypage/history/');">購入履歴</a>からの該当の「注文詳細ページ」よりご確認いただけます。</p>
+					<div align="right"><a href="#pageTop">▲上へ</a></div>
+				</div>
+				
+				
+				<a id="07"></a>
+				<h2>キャンセルについて</h2>
+				<div class="help-box">
+					<p><b>「注文状況」が以下の場合に限りキャンセルをお受けしております。</b></p>
+					<ul>
+						<li>ご入金確認中</li>
+						<li>お支払手続き確認中</li>
+						<li>在庫確保中</li>
+						<li>出荷準備中</li>
+					</ul>
+					<p>※商品発送後のキャンセルは一切お受けしておりません。予めご了承ください。</p>
+					<p><b class="red">※「お取り寄せ」「入荷待ち」商品等の受発注商品、ご注文後にセットアップ（設定）をする一部商品につきましてはご注文後のキャンセルは一切お受けしておりません。予めご了承ください。</b></p>
+				</div>
+				
+				
+				<a id="08"></a>
+				<h2>領収書について</h2>
+				<div class="help-box">
+					<ul>
+						<li>領収書をご希望のお客様はカート画面「お客様情報入力」ページで宛名をご入力ください。</li>
+						<li>領収書はレシート形式で発行いたします。</li>
+						<li>領収書は商品と同梱してお送りいたします。</li>
+					</ul>
+					<p>※商品の届け先以外への領収書および納品書の発送（郵送）はお受けしておりません。予めご了承ください。</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- left bock ########################################################## -->
+		<div id="left-block" class="clearfix">
+			<!-- category menu ########################################################## -->
+			<div id="left-menu">				
+				<div class="category">
+					<h2><p><a href="http://www.akibakan.com/guide/index.html"><strong>ご利用ガイド</strong></a></p></h2>
+					<ul>
+						<li><b><a href="/guide/order/index.html">ご注文について</a></b></li>
+							<p><a href="/guide/order/index.html#01">注文方法について</a></p>
+							<p><a href="/guide/order/index.html#03">在庫確保について</a></p>
+							<p><a href="/guide/order/index.html#04">商品の取置きについて</a></p>
+							<p><a href="/guide/order/index.html#05">予約商品の注文について</a></p>
+							<p><a href="/guide/order/index.html#06">注文状況について</a></p>
+						<br />
+						
+
+						<li><b><a href="/guide/payment/index.html">お支払について</a></b></li>
+							<p><a href="/guide/payment/index.html#01">お支払方法について</a></p>
+							<p><a href="/guide/payment/index.html#02">お支払期限について</a></p>
+						<br />
+
+
+						<li><b><a href="/guide/warranty/index.html">保証について</a></b></li>
+							<p><a href="/guide/warranty/index.html#01">保証の対象について</a></p>
+							<p><a href="/guide/warranty/index.html#02">保証の除外事項について</a></p>
+							<p><a href="/guide/warranty/index.html#03">保証書について</a></p>
+							<p><a href="/guide/warranty/index.html#04">保証期間について</a></p>
+							<p><a href="/guide/warranty/index.html#05">初期不良について</a></p>
+							<p><a href="/guide/warranty/index.html#06">修理について</a></p>
+							<p><a href="/guide/warranty/index.html#07">修理期間について</a></p>
+							<p><a href="warranty/index.html#09">マイナンバーの取り扱いについて</a></p>
+							<p><a href="warranty/index.html#08">初期不良・修理についてのお問合せ</a></p>
+						<br />
+
+						<li><b><a href="/guide/deliver/index.html">お届けについて</a></b></li>
+							<p><a href="/guide/deliver/index.html#01">配送業者について</a></p>
+							<p><a href="/guide/deliver/index.html#02">配送料金について</a></p>
+							<p><a href="/guide/deliver/index.html#03">送料無料商品について</a></p>
+							<p><a href="/guide/deliver/index.html#04">商品の発送について</a></p>
+							<p><a href="/guide/deliver/index.html#05">お取り寄せ商品の発送について</a></p>
+							<p><a href="/guide/deliver/index.html#06">配送希望日時について</a></p>
+							<p><a href="/guide/deliver/index.html#07">配送状況の確認について</a></p>
+							<p><a href="/guide/deliver/index.html#08">お届け先変更について</a></p>
+						<br />
+						
+						
+						<li><b><a href="/guide/return/index.html">交換・返品について</a></b></li>
+							<p><a href="/guide/return/index.html#01">交換について</a></p>
+							<p><a href="/guide/return/index.html#02">返品について</a></p>
+							<p><a href="/guide/return/index.html#03">お客様都合による交換・返品について</a></p>
+							<p><a href="/guide/return/index.html#04">交換・返品の除外について</a></p>
+							<p><a href="/guide/return/index.html#05">交換・返品手続きの流れについて</a></p>
+							<p><a href="/guide/return/index.html#06">返金について</a></p>
+						<br />
+						
+						<li><b><a href="/guide/wage/index.html#01">パーツの取り付けについて</a></b></li>
+							<p><a href="/guide/wage/index.html#02">店頭へのお持ち込みについて</a></p>
+							<p><a href="/guide/wage/index.html#03">発送でのご依頼について</a></p>
+							<p><a href="/guide/wage/index.html#04">複数同時作業について</a></p>
+							<p><a href="/guide/wage/index.html#14">取り付け工賃のお見積りについて</a></p>
+							<p><a href="/guide/wage/index.html#05">取り付け工賃表</a></p>
+						<br />
+
+						<li><b><a href="/guide/shoplist/index.html">店舗案内/お問合せ</a></b></li>
+							<p><a href="/guide/shoplist/index.html#01">店舗情報</a></p>
+							<p><a href="/guide/shoplist/index.html#02">メールでのお問合せについて</a></p>
+							<p><a href="/guide/shoplist/index.html#03">電話でのお問合せについて</a></p>
+						<br />
+
+						<li><b><a href="/guide/purchase/index.html">買い取りについて</a></b></li>
+							<p><a href="/guide/purchase/index.html#01">買い取りの受付について</a></p>
+							<p><a href="/guide/purchase/index.html#02">買い取りの際に必要なもの</a></p>
+							<p><a href="/guide/purchase/index.html#03">買取をご依頼いただく際の注意事項</a></p>
+							<p><a href="/guide/purchase/index.html#04">買い取り金額について</a></p>
+							<p><a href="/guide/purchase/desktop.html">買い取り価格</a></p>
+							<p><a href="/guide/purchase/index.html#05">お持ち込みでの買い取りについて</a></p>
+							<p><a href="/guide/purchase/index.html#06">査定時間について</a></p>
+							<p><a href="/guide/purchase/index.html#07">発送での買い取りについて</a></p>
+							<p><a href="/guide/purchase/index.html#08">発送時の製品の梱包について</a></p>
+							<p><a href="/guide/purchase/index.html#09">買い取りの不成立について</a></p>
+							<p><a href="/guide/purchase/index.html#10">買取成立後の返却について</a></p>
+						<br />
+						
+						<li><b><a href="/guide/help-terms.html">ご利用規約</a></b></li>
+							<p><a href="/guide/help-terms.html">秋葉館ご利用規約</a></p>
+							<p><a href="/guide/help-privacypolicy.html">個人情報保護方針</a></p>
+							<p><a href="/guide/help-regulation.html">特定商取引法に基づく表示</a></p>
+						<br />
+					</ul>
+				</div>
+
+			</div>
+
+	
+		</div>
+	</div>
+	
+
+	<!-- footer ########################################################## -->
+	<div id="footer"><!-- フッタ -->
+<div id="footer">Copyright (C) 
+<?php
+echo date("Y");
+?>
+ Mac専門店 秋葉館.com [akibakan.com] All Rights Reserved.</div></div>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>取り付け工賃見積り依頼フォーム｜Mac専門店 秋葉館.com</title>
+
+<link href="/images/upload/top/favicon.ico" type="image/x-icon" rel="shortcut icon">
+
+<link rel="stylesheet" href="http://www.akibakan.com/article/css/base.css" type="text/css" />
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+
+<script type="text/javascript">
+$(function() {
+	$("input").css('color', '#999');
+	var input_val = [];
+	$("input").each(function() {
+		input_val.push($(this).val());
+	});
+	$("input").focus(function() {
+		var chk_num = $("input").index(this);
+		var chk_val = $("input").eq(chk_num).val();
+		if(chk_val == input_val[chk_num]) {
+			var def_val = $(this).val();
+			$(this).val('');
+			$(this).css('color', '#333');
+			$(this).blur(function() {
+				if($(this).val() == '') {
+					$(this).val(def_val);
+					$(this).css('color', '#999');
+				}
+			});
+		}
+	});
+});
+</script>
+
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<link href="http://www.akibakan.com/article/thickbox/colorbox.css" rel="stylesheet" />
+<script src="http://www.akibakan.com/article/thickbox/jquery.colorbox.js"></script>
+
+<script>
+	$(document).ready(function(){
+		//Examples of how to assign the ColorBox event to elements
+		$(".thickbox").colorbox({rel:'thickbox', transition:"none", width:"600", height:"95%"});
+		//Example of preserving a JavaScript event for inline calls.
+		$("#click").click(function(){ 
+			$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+			return false;
+		});
+	});
+</script>
+
+<!-- Scroll -->
+<script type="text/javascript" src="/article/js/jquery.page-scroller.js" charset="utf-8"></script>
+<!-- Zip -->
+<script type="text/javascript" src="jquery.zip2addr.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-450406-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<style>
+label,input {    vertical-align:middle;}
+</style>
+</head>
+
+<body id="pageTop">
+
+<div id="container">
+	<div id="wrap" class="clearfix">
+		<!-- header block ########################################################## -->
+		 <? EmbedHeader();/*ヘッダ埋め込み*/?>
+
+		<!-- contents block ########################################################## -->
+		<div id="contents">
+			
+			<!-- center blorck ########################################################## -->
+			<div id="help-block">
+
+			<div id="pan"><a href="http://www.akibakan.com/">TOP</a> > <a href="/guide/index.html">ご利用ガイド</a> > <a href="/guide/wage/index.html">パーツ取り付けサービス</a> > <b>iMac27インチ取り付け工賃見積り依頼フォーム</b></div>
+			<h1 id="category-name">iMac27インチ取り付け工賃見積り依頼フォーム</h1>
+					
+				<h2>iMac27インチ取り付け工賃見積りフォーム</h2>
+				<p>※このフォームはiMac27インチのお客様専用です。iMac27インチ以外のお客様は<a href="http://www.akibakan.com/guide/wage/form/index.html">こちら</a>からご依頼をお願いいたします。</p>
+				<div class="help-box">
+					<form method="post" name="sfm-form" id="sfm-form" action="mail.php">
+						<table id="mailform" class="px12">
+							<tr class="tel">
+								<th class="border-red">電話番号 <span>*</span></th>
+								<td><input name="tel_s[0]" type="text" maxlength="4" id="tel0" />
+									&nbsp;-&nbsp;
+									<input name="tel_s[1]" type="text" maxlength="4" id="tel1" />
+									&nbsp;-&nbsp;
+									<input name="tel_s[2]" type="text" maxlength="4" id="tel2" /></td>
+							</tr>
+							<tr>
+								<th class="border-red">郵便番号 <span>*</span></th>
+								<td><input name="zip_s[0]" type="text" maxlength="4" id="zip0" />
+									&nbsp;-&nbsp;
+									<input name="zip_s[1]" type="text" maxlength="4" id="zip1" /></td>
+							</tr>
+							<tr>
+								<th class="border-red">都道府県 <span>*</span></th>
+								<td>
+									<select name="address1_s" id="pref5">
+										<option></option>
+										<option>北海道</option>
+										<option>青森県</option>
+										<option>岩手県</option>
+										<option>宮城県</option>
+										<option>秋田県</option>
+										<option>山形県</option>
+										<option>福島県</option>
+										<option>茨城県</option>
+										<option>栃木県</option>
+										<option>群馬県</option>
+										<option>埼玉県</option>
+										<option>千葉県</option>
+										<option>東京都</option>
+										<option>神奈川県</option>
+										<option>新潟県</option>
+										<option>富山県</option>
+										<option>石川県</option>
+										<option>福井県</option>
+										<option>山梨県</option>
+										<option>長野県</option>
+										<option>岐阜県</option>
+										<option>静岡県</option>
+										<option>愛知県</option>
+										<option>三重県</option>
+										<option>滋賀県</option>
+										<option>京都府</option>
+										<option>大阪府</option>
+										<option>兵庫県</option>
+										<option>奈良県</option>
+										<option>和歌山県</option>
+										<option>鳥取県</option>
+										<option>島根県</option>
+										<option>岡山県</option>
+										<option>広島県</option>
+										<option>山口県</option>
+										<option>徳島県</option>
+										<option>香川県</option>
+										<option>愛媛県</option>
+										<option>高知県</option>
+										<option>福岡県</option>
+										<option>佐賀県</option>
+										<option>長崎県</option>
+										<option>熊本県</option>
+										<option>大分県</option>
+										<option>宮崎県</option>
+										<option>鹿児島県</option>
+										<option>沖縄県</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th class="border-red">市区町村・番地 <span>*</span></th>
+								<td><input type="text" name="address2_s" id="address2" />
+									<script>
+									$('#zip0').zip2addr({
+										zip2:'#zip1',
+										pref:'#pref5',
+										addr:'#address2'
+									})
+									</script>
+								</td>
+							</tr>
+							<tr>
+								<th class="border-red">ビル・建物名<br />
+														エレベーター有・無 <span>*</span></th>
+								<td>
+									<input type="text" name="address3" id="address3" size="34" /><br />
+									<input type="hidden" name="elevator_s" value="none" /><br />
+									<label><input type="radio" name="elevator_s" value="エレベーターなし" />　エレベーターなし</label><br />
+									<label><input type="radio" name="elevator_s" value="エレベーターあり" />　エレベーターあり</label>
+								</td>
+							</tr>
+							<tr>
+								<th class="border-red">会社名</th>
+								<td><input type="text" name="campany" id="name" /></td>
+							</tr>
+							<tr>
+								<th class="border-red">部署名</th>
+								<td><input type="text" name="unit" id="name" /></td>
+							</tr>
+							<tr>
+								<th class="border-red">氏名/担当者名 <span>*</span></th>
+								<td><input type="text" name="name_s" id="name" /></td>
+							</tr>
+							<tr>
+								<th class="border-red">ふりがな <span>*</span></th>
+								<td><input type="text" name="kana_s" id="kana" /></td>
+							</tr>
+							<tr>
+								<th class="border-red">メールアドレス <span>*</span></th>
+								<td><input type="text" name="email_s" id="email" /></td>
+							</tr>
+							<tr>
+								<th class="border-red">メールアドレスの確認 <span>*</span></th>
+								<td><input type="text" name="emailcheck" id="emailcheck" /></td>
+							</tr>
+							<tr>
+								<th class="border-red">Macの型番 <span>*</span></th>
+								<td>
+									<input type="text" name="model2_s" id="model" />
+									<p>※外箱に記載のある「M○○○○J/A」または「このマックについて」からシリアルNoを確認しご記載ください。<br />
+									<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+									<script type="text/javascript">
+									jQuery.noConflict();
+									jQuery(function() {
+										jQuery(".popup").click(function(){
+											window.open(this.href, "WindowName","width=745,height=500,resizable=yes,scrollbars=yes");
+											return false;
+										});
+									});
+									</script>
+									※シリアルNoの確認方法は<b><a href="/article/contents/system-memory.html" class="popup">こちら</a></b></p>
+									<p><b class="red">※「A○○○○」では機種の特定が出来ません。必ず型番またはシリアルNoをご記載ください。</b></p> 
+									
+								</td>
+							</tr>
+							<tr>
+								<th>
+								元箱の有・無 <span>*</span></th>
+								<td><a name="box"></a>
+									<input type="hidden" name="box_s" value="none" /><br />
+									<label><input type="radio" name="box_s" value="元箱あり" />　元箱あり</label><br />
+									<label><input type="radio" name="box_s" value="元箱無し" />　元箱無し</label>
+									<p>
+										* 元箱がない場合は必ず運送会社が用意しているパソコン用梱包資材をご利用ください。<br />
+										* 元箱や運送会社が用意するパソコン用梱包資材以外でお送りいただいた場合、受取は致しますが作業を行わず着払いにてご返送いたします。<br />
+										* <!-- iMac24インチ、iMac27インチが収納できる梱包資材はありません。iMac24インチ、iMac27インチで元箱がない場合は必ず<a href="http://www.008008.jp/transport/kazai/" target="_blank">クロネコヤマトらくらく家財宅急便</a>をご利用して頂きます。らくらく家財宅急便以外の配送方法の場合、受取は致しますが作業を行わずご返送いたします。返送につきましては<a href="http://www.008008.jp/transport/kazai/" target="_blank">クロネコヤマトらくらく家財宅急便</a>を利用致しますため、先に送料をお振り込みいただき、振込確認後ご返送となります。予めご了承ください。<br />
+→<a href="https://form.008008.jp/mitumori/PKZI0100Action_doInit.action" target="_blank"><b>料金検索はこちら</b></a>（荷物サイズはAクラスになります。）-->
+										iMac
+										<!-- 24インチ、iMac27インチ-->
+										で元箱がない場合は、<b>お見積りご依頼前に必ずお電話にてお問い合わせください</b>。<br />
+										* 運送時に生じた故障や破損につきましては当店では一切保証致しません。</p>
+								</td>
+							</tr>
+							<tr>
+								<th class="border-red">商品番号/商品名 <span>*</span></th>
+								<td><textarea name="message_s" cols="40" rows="5" id="message" ></textarea>
+								<ul>
+									<li>秋葉館商品詳細ページに記載されている「商品番号：BCAK○○○○○○○」、「型番：XXXXXXX」または「商品名」と希望される数量をご記載ください。</li>
+								</ul>
+								<p>例1）商品番号：BCAK0075272 ｘ8枚</p>
+								<p>例2）商品番号：240-1333-16384-IR ｘ8枚</p>
+								<p>例3）iRam製 DDR3 ECC SDRAM 1333MHz 16GB [240-1333-16384-IR] ｘ8枚</p>
+								<br />
+								<b>ハードディスクのお取り付け（交換・増設）をご希望の方は必ず下記ラジオボタンから希望の項目を選択してください。</b>
+								<input type="hidden" name="hdd" value="none" /><br />
+								<input type="radio" name="hdd" value="交換" />　交換<br />
+								<input type="radio" name="hdd" value="増設" />　増設<br />
+								※お使いのMacによっては交換・増設が行えない機種や、交換・増設の際に別途パーツが必要なものがございます。予めご了承ください。
+							</tr>
+							<!--tr>
+								<th>送信内容確認</th>
+								<td><input type="checkbox" name="autoReply" value="確認メールを受け取る" checked="checked" class="checkbox" />
+											&nbsp;確認メールを受け取る</td>
+							</tr-->
+							<tr class="button">
+								<td colspan="2" class="submit" align="center"><p class="type-red">*印は全て必須となります。</p>
+								<input type="hidden" name="mailToNum" value="0" />
+								<input type="hidden" name="mode" value="CONFIRM" />
+								<input type="reset" name="reset" value="リセット" style="width: 50px;" />
+								&nbsp;
+								<input type="submit" name="submit" value="確 認" /></td>
+							</tr>
+						</table>
+					</form>
+					<p>※金曜18時以降にいただきましたメールは月曜以降順次ご返送いたします</p>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		<!-- left bock ########################################################## -->
+		<div id="left-block" class="clearfix">
+			<!-- category menu ########################################################## -->
+			<div id="left-menu">				
+				<div class="category">
+					<h2><p><a href="http://www.akibakan.com/guide/index.html"><strong>ご利用ガイド</strong></a></p></h2>
+					<ul>
+						<li><b><a href="/guide/order/index.html">ご注文について</a></b></li>
+							<p><a href="/guide/order/index.html#01">注文方法について</a></p>
+							<p><a href="/guide/order/index.html#03">在庫確保について</a></p>
+							<p><a href="/guide/order/index.html#04">商品の取置きについて</a></p>
+							<p><a href="/guide/order/index.html#05">予約商品の注文について</a></p>
+							<p><a href="/guide/order/index.html#06">注文状況について</a></p>
+						<br />
+						
+
+						<li><b><a href="/guide/payment/index.html">お支払について</a></b></li>
+							<p><a href="/guide/payment/index.html#01">お支払方法について</a></p>
+							<p><a href="/guide/payment/index.html#02">お支払期限について</a></p>
+						<br />
+
+
+						<li><b><a href="/guide/warranty/index.html">保証について</a></b></li>
+							<p><a href="/guide/warranty/index.html#01">保証の対象について</a></p>
+							<p><a href="/guide/warranty/index.html#02">保証の除外事項について</a></p>
+							<p><a href="/guide/warranty/index.html#03">保証書について</a></p>
+							<p><a href="/guide/warranty/index.html#04">保証期間について</a></p>
+							<p><a href="/guide/warranty/index.html#05">初期不良について</a></p>
+							<p><a href="/guide/warranty/index.html#06">修理について</a></p>
+							<p><a href="/guide/warranty/index.html#07">修理期間について</a></p>
+							<p><a href="warranty/index.html#09">マイナンバーの取り扱いについて</a></p>
+							<p><a href="warranty/index.html#08">初期不良・修理についてのお問合せ</a></p>
+						<br />
+
+						<li><b><a href="/guide/deliver/index.html">お届けについて</a></b></li>
+							<p><a href="/guide/deliver/index.html#01">配送業者について</a></p>
+							<p><a href="/guide/deliver/index.html#02">配送料金について</a></p>
+							<p><a href="/guide/deliver/index.html#03">送料無料商品について</a></p>
+							<p><a href="/guide/deliver/index.html#04">商品の発送について</a></p>
+							<p><a href="/guide/deliver/index.html#05">お取り寄せ商品の発送について</a></p>
+							<p><a href="/guide/deliver/index.html#06">配送希望日時について</a></p>
+							<p><a href="/guide/deliver/index.html#07">配送状況の確認について</a></p>
+							<p><a href="/guide/deliver/index.html#08">お届け先変更について</a></p>
+						<br />
+						
+						
+						<li><b><a href="/guide/return/index.html">交換・返品について</a></b></li>
+							<p><a href="/guide/return/index.html#01">交換について</a></p>
+							<p><a href="/guide/return/index.html#02">返品について</a></p>
+							<p><a href="/guide/return/index.html#03">お客様都合による交換・返品について</a></p>
+							<p><a href="/guide/return/index.html#04">交換・返品の除外について</a></p>
+							<p><a href="/guide/return/index.html#05">交換・返品手続きの流れについて</a></p>
+							<p><a href="/guide/return/index.html#06">返金について</a></p>
+						<br />
+						
+						<li><b><a href="/guide/wage/index.html#01">パーツの取り付けについて</a></b></li>
+							<p><a href="/guide/wage/index.html#02">店頭へのお持ち込みについて</a></p>
+							<p><a href="/guide/wage/index.html#03">発送でのご依頼について</a></p>
+							<p><a href="/guide/wage/index.html#04">複数同時作業について</a></p>
+							<p><a href="/guide/wage/index.html#14">取り付け工賃のお見積りについて</a></p>
+							<p><a href="/guide/wage/index.html#05">取り付け工賃表</a></p>
+						<br />
+
+						<li><b><a href="/guide/shoplist/index.html">店舗案内/お問合せ</a></b></li>
+							<p><a href="/guide/shoplist/index.html#01">店舗情報</a></p>
+							<p><a href="/guide/shoplist/index.html#02">メールでのお問合せについて</a></p>
+							<p><a href="/guide/shoplist/index.html#03">電話でのお問合せについて</a></p>
+						<br />
+
+						<li><b><a href="/guide/purchase/index.html">買い取りについて</a></b></li>
+							<p><a href="/guide/purchase/index.html#01">買い取りの受付について</a></p>
+							<p><a href="/guide/purchase/index.html#02">買い取りの際に必要なもの</a></p>
+							<p><a href="/guide/purchase/index.html#03">買取をご依頼いただく際の注意事項</a></p>
+							<p><a href="/guide/purchase/index.html#04">買い取り金額について</a></p>
+							<p><a href="/guide/purchase/desktop.html">買い取り価格</a></p>
+							<p><a href="/guide/purchase/index.html#05">お持ち込みでの買い取りについて</a></p>
+							<p><a href="/guide/purchase/index.html#06">査定時間について</a></p>
+							<p><a href="/guide/purchase/index.html#07">発送での買い取りについて</a></p>
+							<p><a href="/guide/purchase/index.html#08">発送時の製品の梱包について</a></p>
+							<p><a href="/guide/purchase/index.html#09">買い取りの不成立について</a></p>
+							<p><a href="/guide/purchase/index.html#10">買取成立後の返却について</a></p>
+						<br />
+						
+						<li><b><a href="/guide/help-terms.html">ご利用規約</a></b></li>
+							<p><a href="/guide/help-terms.html">秋葉館ご利用規約</a></p>
+							<p><a href="/guide/help-privacypolicy.html">個人情報保護方針</a></p>
+							<p><a href="/guide/help-regulation.html">特定商取引法に基づく表示</a></p>
+						<br />
+					</ul>
+				</div>
+
+			</div>
+
+	
+		</div>
+	</div>
+	
+
+	<!-- footer ########################################################## -->
+	<div id="footer"><!-- フッタ -->
+<div id="footer">Copyright (C) 
+<?php
+echo date("Y");
+?>
+ Mac専門店 秋葉館.com [akibakan.com] All Rights Reserved.</div></div>
+</div>
+
+</body>
+</html>
+

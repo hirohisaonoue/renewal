@@ -1,0 +1,103 @@
+<form action="#">
+    <p>
+        <input type="button" value="最下行に1行挿入" onclick="fTalbeInsertRow()" />
+        <input type="button" value="最下行から1行削除" onclick="fTalbeDeleteRow()" />
+    </p>
+</form>
+
+<div class='tbl'>
+    <table id="tableJ">
+        <tr>
+			<th>商品</th>
+			<td><input type="text" name="itemid0" value="" size="10" maxlength="20" /></td>
+			<td><input type="text" name="itemname0'" value="" size="10" maxlength="20" /></td>
+		</tr>
+    </table>
+</div>
+
+<script type="text/javascript">
+    function fTalbeDeleteRow(){
+        var tObj=document.getElementById("tableJ");
+        /* 行数 */
+        var idx=tObj.rows["length"];
+        /* 1行挿入（最終行から削除）*/
+        tObj.deleteRow(idx-1);
+    }
+    function fTalbeInsertRow(){
+        var tObj=document.getElementById("tableJ");
+        /* 行数 */
+        var idx=tObj.rows["length"];
+        var idy=idx+1;
+        /* 1行挿入（最終行に挿入）*/
+        var insObj=tObj.insertRow(idx);
+        var n=insObj.insertCell(0)
+        var x=insObj.insertCell(1)
+          var y=insObj.insertCell(2)
+          var z=insObj.insertCell(3)
+           n.innerHTML="item"+idy;
+         x.innerHTML='<input type="text" name="itemid' + idy + '" value="" size="10" maxlength="20" />';
+         y.innerHTML='<input type="text" name="itemname' + idy + '" value="" size="10" maxlength="20" />';
+    }
+</script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+*************************************************************************
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<script type="text/javascript">
+var counter = 0;
+function AddTableRows(){
+	// カウンタを回す
+	counter++;
+
+	var table1 = document.getElementById("table1");
+	var row1 = table1.insertRow(counter);
+	var cell1 = row1.insertCell(0);
+	var cell2 = row1.insertCell(1);
+
+	// class の付与は UserAgent によって
+	// 挙動が違うっぽいので念のため両方の方法で
+	cell1.setAttribute("class","itemid");
+	cell2.setAttribute("class","itemname");
+	cell1.className = 'itemid';
+	cell2.className = 'itemname';
+
+	var HTML1 = '<input type="text" name="itemid' + counter + '" value="" size="10" maxlength="20" />';
+	var HTML2 = '<input type="text" name="itemname' + counter + '" value="" size="10" maxlength="20" />';
+	cell1.innerHTML = HTML1;
+	cell2.innerHTML = HTML2;
+}
+
+function DeleteTableRow(){
+	var table1=document.getElementById("table1");
+	var idx=table1.rows["length"];
+	table1.deleteRow(idx-1);
+}
+
+</script>
+
+<table border="1" cellspacing="0" cellpadding="4" id="table1">
+  <tr>
+    <th>名前</th>
+    <th>住所</th>
+  </tr><tr>
+    <td class="name"><input type="text" name="name0" value="" size="10" maxlength="20" /></td>
+    <td class="address"><input type="text" name="address0" value="" size="10" maxlength="20" /></td>
+  </tr>
+</table>
+<form method="GET" action="#">
+  <input type="button" value="テーブルに行を追加" onClick="AddTableRows();" />
+        <input type="button" value="最下行から1行削除" onclick="DeleteTableRow()" />
+</form>
+

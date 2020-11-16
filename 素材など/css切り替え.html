@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=SHIFT_JIS">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 9.0.0.0 Trial for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+<SCRIPT LANGUAGE="JavaScript" src="../getcss.js"></SCRIPT>
+<TITLE>スタイルシートを替えよう（クッキー使用）</TITLE>
+
+<style type=text/CSS>
+<!--
+A { 
+　text-decoration:none; 
+　}
+
+A:HOVER{
+　text-decoration: none;
+  position:relative; top:1px; left:1px;
+  text-decoration : none;
+}
+-->
+</style>
+<script language="JavaScript">
+var css = GetCookie("CSS");
+if(css == ""){css = "../hpstable.css";}
+document.write('<LINK REL="stylesheet" HREF="../' + css + '" TYPE="text/css">');
+
+function SetCss(file){
+
+		SetCookie("CSS", file);
+		window.location.reload();
+}
+
+function GetCookie(key){
+	var tmp = document.cookie + ";";
+	var index1 = tmp.indexOf(key, 0);
+	if(index1 != -1){
+		tmp = tmp.substring(index1, tmp.length);
+		var index2 = tmp.indexOf("=", 0) + 1;
+		var index3 = tmp.indexOf(";", index2);
+		return(unescape(tmp.substring(index2,index3)));
+	}
+	return("");
+}
+
+function SetCookie(key, val){
+	document.cookie = key + "=" + escape(val) + ";expires=Fri, 31-Dec-2099 23:59:59;";
+}
+// -->
+</script>
+</HEAD>
+<BODY>
+<NOSCRIPT><LINK rel="stylesheet" href="../hpstable.css" type="text/css"></NOSCRIPT>
+<DIV align="center">
+<TABLE class="main">
+  <TBODY>
+    <TR>
+      <TD class="waku">■　<B>スタイルシートを替えよう（クッキー使用）</B>　■</TD>
+    </TR>
+    <TR>
+      <TD height="67">
+      <P align="center"><FONT size="2">ソースａ　は　＜ｈｅａｄ＞　～　＜／ｈｅａｄ＞ のお好きなところに記述してね♪<BR>
+      ソースｂ　は　表示したい場所＜ｂｏｄｙ＞～＜/ｂｏｄｙ＞間に記入してください。</FONT></P>
+      </TD>
+    </TR>
+    <TR>
+      <TD class="waku" height="18">■　<B>サンプル</B>　■</TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center" height="89"><FONT color="#000099">■をクリックしてスタイルシートを変更して下さい。</FONT><BR>
+      <BR>
+      <FONT size="+1"><A onclick="SetCss('hpstable.css')"><FONT color="#869EDE">■</FONT></a>　　　　　<A onclick="SetCss('hpstable1.css')"><FONT color="#99cc33">■</FONT></a>　　　　　<A onclick="SetCss('hpstable2.css')"><FONT color="#ffcfce">■</FONT></a>　　　　　<A onclick="SetCss('hpstable3.css')"><FONT color="#ffcc00">■</FONT></a>　　　　　<A onclick="SetCss('hpstable4.css')"><FONT color="#bbbbbb">■</FONT></a>
+</FONT></TD>
+    </TR>
+    <TR>
+      <TD class="waku" height="1">■　<B>ソースa</B>　■</TD>
+    </TR>
+    <TR>
+      <TD valign="top" align="left" height="126">&lt;SCRIPT TYPE=&quot;text/javascript&quot;&gt;<BR>
+      &lt;!--<BR>
+      var css = GetCookie(&quot;CSS&quot;);<BR>
+      if(css == &quot;&quot;){css = &quot;<FONT color="#ff0000">hpstable.css</FONT>&quot;;}<BR>
+      document.write('&lt;LINK REL=&quot;stylesheet&quot; HREF=&quot;' + css + '&quot; TYPE=&quot;text/css&quot;&gt;');<BR>
+      <BR>
+      function SetCss(file){<BR>
+      　　　　　　　　　　　　　　SetCookie(&quot;CSS&quot;, file);<BR>
+      　　　　　　　　　　　　　　window.location.reload();<BR>
+      　　　　　　　　　　　　　　}<BR>
+      <BR>
+      function GetCookie(key){<BR>
+      　　　　　　　　　　　　　　　　var tmp = document.cookie + &quot;;&quot;;<BR>
+      　　　　　　　　　　　　　　　　var tmp1 = tmp.indexOf(key, 0);<BR>
+      　　　　　　if(tmp1 != -1){<BR>
+      　　　　　　　　　　　　　　　　tmp = tmp.substring(tmp1, tmp.length);<BR>
+      　　　　　　　　　　　　　　　　var start = tmp.indexOf(&quot;=&quot;, 0) + 1;<BR>
+      　　　　　　　　　　　　　　　　var end = tmp.indexOf(&quot;;&quot;, start);<BR>
+      　　　　　　　　　　　　　　　　return(unescape(tmp.substring(start,end)));<BR>
+      　　　　　　　　　　　　　　　　}<BR>
+      　　　　　　　　　　　　　　　　return(&quot;&quot;);<BR>
+      　　　　　　　　　　　　　　　　}<BR>
+      <BR>
+      function SetCookie(key, val){<BR>
+      　　　　　　document.cookie = key + &quot;=&quot; + escape(val) + &quot;;expires=Fri,
+      31-Dec-2030 23:59:59;&quot;;<BR>
+      　　　　　　}<BR>
+      //--&gt;<BR>
+      &lt;/SCRIPT&gt;<BR>
+      &lt;NOSCRIPT&gt;<BR>
+      &lt;LINK rel=&quot;stylesheet&quot; href=&quot;<FONT color="#ff0000">hpstable.css</FONT>&quot; type=&quot;text/css&quot;&gt;<BR>
+      &lt;/NOSCRIPT&gt;</TD>
+    </TR>
+    <TR>
+      <TD class="waku">■　<B>ソースb</B>　■</TD>
+    </TR>
+    <TR>
+      <TD height="81">　&lt;A onclick=&quot;SetCss('<FONT color="#ff0000">hpstable.css</FONT>')&quot;&gt;&lt;FONT color=&quot;#869EDE&quot;&gt;■&lt;/FONT&gt;&lt;/a&gt;<BR>
+      　&lt;A onclick=&quot;SetCss('<FONT color="#ff0000">hpstable1.css</FONT>')&quot;&gt;&lt;FONT color=&quot;#99cc33&quot;&gt;■&lt;/FONT&gt;&lt;/a&gt;<BR>
+      　&lt;A onclick=&quot;SetCss('<FONT color="#ff0000">hpstable2.css</FONT>')&quot;&gt;&lt;FONT color=&quot;#ffcfce&quot;&gt;■&lt;/FONT&gt;&lt;/a&gt;</TD>
+    </TR>
+    <TR>
+      <TD class="waku" height="0">■　<B>解　　説</B>　■</TD>
+    </TR>
+    <TR>
+      <TD height="207">自分好みのスタイルシートをクッキーで保存することで、次回からは見やすくできます。<BR>
+      スタイルシートを変更して、ブラウザの<a onClick="location.reload()"><IMG src="../refresh.gif" width="13" height="16" border="0">更新</a>ボタンを押し、スタイルシートが変わらないことを確認して下さい。<BR>
+      <BR>
+      但し、ＪａｖａｓｃｒｉｐｔおよびＣｏｏｋｉｅをＯＦＦにしてあると正常に作動しません。<BR>
+      <BR>
+      function GetCookie(key)は、クッキーからの読み込み　また、<BR>
+      ｆunction SetCookie(key, val)は、クッキーへの書き込み関数ですので、手を加えずにそのままコピペしてお使いください。<BR>
+      <BR>
+      赤文字の<FONT color="#ff0000">hpstable.css</FONT>等はスタイルシートファイルですので、事前に準備（作成）しておく。<BR>
+      <BR>
+      ソースｂの&lt;A onclick=････は、スタイルシートのファイルの数だけ追記する。<BR>
+      </TD>
+    </TR>
+    <TR>
+      <TD align="right" valign="top" height="4"><A href="javascript:history.go(-1)"><IMG src="../../modoru.gif" border="0"></A><script language=JavaScript1.2 src=../../cgi-bin/pgcnt/pgcnt.cgi?pg=StyleSheetChange2></script></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</DIV>
+</BODY>
+</HTML>

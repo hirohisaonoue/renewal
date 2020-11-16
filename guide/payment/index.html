@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>お支払いについて｜Mac専門店 秋葉館.com</title>
+
+<link href="/images/upload/top/favicon.ico" type="image/x-icon" rel="shortcut icon">
+
+<link rel="stylesheet" href="http://www.akibakan.com/article/css/base.css" type="text/css" />
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+
+<script type="text/javascript">
+$(function() {
+	$("input").css('color', '#999');
+	var input_val = [];
+	$("input").each(function() {
+		input_val.push($(this).val());
+	});
+	$("input").focus(function() {
+		var chk_num = $("input").index(this);
+		var chk_val = $("input").eq(chk_num).val();
+		if(chk_val == input_val[chk_num]) {
+			var def_val = $(this).val();
+			$(this).val('');
+			$(this).css('color', '#333');
+			$(this).blur(function() {
+				if($(this).val() == '') {
+					$(this).val(def_val);
+					$(this).css('color', '#999');
+				}
+			});
+		}
+	});
+});
+</script>
+
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<link href="http://www.akibakan-us.com/article/thickbox/colorbox.css" rel="stylesheet" />
+<script src="http://www.akibakan-us.com/article/thickbox/jquery.colorbox.js"></script>
+
+<script>
+	$(document).ready(function(){
+		//Examples of how to assign the ColorBox event to elements
+		$(".thickbox").colorbox({rel:'thickbox', transition:"none", width:"auto", height:"95%"});
+		//Example of preserving a JavaScript event for inline calls.
+		$("#click").click(function(){ 
+			$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+			return false;
+		});
+	});
+</script>
+
+<!-- Scroll -->
+<script type="text/javascript" src="/article/js/jquery.page-scroller.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-450406-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body id="pageTop">
+
+
+<div id="container">
+	<div id="wrap" class="clearfix">
+		<!-- header block ########################################################## -->
+		 <? EmbedHeader();/*ヘッダ埋め込み*/?>
+
+		
+		<!-- contents block ########################################################## -->
+		<div id="contents">
+			
+			<!-- center blorck ########################################################## -->
+			<div id="help-block">
+		
+			<div id="pan"><a href="http://www.akibakan.com/">TOP</a> > <a href="/guide/index.html">ご利用ガイド</a> > <b>お支払い方法について</b></div>
+			<h1 id="category-name">お支払いについて</h1>
+				<div class="help-eachblock clearfix">
+					<ul class="eachmenu">
+						<li><a href="#01">お支払いについて</a>
+							<ul>
+								<li><a href="help-payment-bank.html">銀行振込</a></li>
+								<li><a href="help-payment-cod.html">代金引換</a></li>
+								<li><a href="help-payment-convenience.html">コンビニエンスストア支払い</a></li>
+								<li><a href="help-payment-creca.html">クレジットカード決済</a></li>
+								<li><a href="help-payment-loan.html">ショッピングクレジット（ローン）決済</a></li>
+								<!--li><a href="help-payment-loan.html">法人後払い決済</a></li-->
+							</ul>
+						</li>
+					</ul>
+
+					<ul class="eachmenu">
+						<li><a href="#02">お支払期限について</a></li>
+					</ul>
+				</div>
+
+				<a id="01"></a>
+				<h2>お支払方法</h2>
+				<div class="help-box">
+					<p>秋葉館では、以下のお支払方法がご利用いただけます。 </p>
+					<br />
+					<p class="px14"><b>○&nbsp;<a href="help-payment-bank.html">銀行振込</a></b></p>
+					<p class="px14"><b>○&nbsp;<a href="help-payment-cod.html">代金引換</a></b></p>
+					<p class="px14"><b>○&nbsp;<a href="help-payment-convenience.html">コンビニエンス支払い</a></b></p>
+					<p class="px14"><b>○&nbsp;<a href="help-payment-creca.html">ショッピングクレジット（ローン）決済</a></b></p>
+					<!--p class="px14"><b>○&nbsp;<a href="help-payment-deferred.html">法人後払い決済</a></b></p-->
+					<p>お支払方法によって支払期限や手数料等が異なります。詳しくは各お支払方法のページでご確認ください。</p>
+					<div align="right"><a href="#pageTop">▲&nbsp;上へ</a></div>
+				</div>
+	
+				<a id="02"></a>
+				<h2>お支払期限について</h2>
+				<div class="help-box">
+					<p>下記のお支払方法でのご注文は、お支払期限が設けられております。</p>
+					<p><b>○ 銀行振込</b>
+					<ul>
+						<li>ご注文翌日から1週間以内にお振り込みください。</li>
+						<li>期限内にお振り込みが確認できない場合は自動的にご注文がキャンセルとなります。</li>
+						<li>期限後のご入金は、すべて返金処理をさせていただきます。</li>
+						<p>※&nbsp;銀行からのご入金データ送信のタイミングによって、秋葉館注文システム側で入金確認が取れないまま期限を過ぎてしまい、注文がキャンセルになる場合がございます。</p>
+						<p>※ 期限後のご入金はご返金となります。返金時にかかる振込手数料はお客様負担とさせていただきます。詳しくは「<a href="../return/index.html#06">返金について</a>」をご確認ください。</p>
+					</ul>
+					
+					<br />
+
+					<p><b>○ コンビニエンス支払い</b>
+					<ul>
+						<li>ご注文後登録頂いているメールアドレスにコンビニ払込情報と支払期限が記載された[Econ:xxxx-xxxxx]お支払い受付番号のお知らせ」メールが送信されます。メールに記載された期限までに最寄りのコンビニエンスストアでお支払ください。</li>
+						<li>期限を過ぎますと自動的にコンビニ支払い伝票が抹消されご入金いただけなくなり、同時にご注文がキャンセルとなります。</li>
+					</ul>
+					
+					<br />
+					<div class="px11">
+						<p>※&nbsp;自動キャンセル後注文を復帰することができないため、再度ご注文をお願いいたします。</p>
+						<p>※&nbsp;ご注文がキャンセルとなりますと、お客様の商品の取り置きがされない状態となります。再注文いただくまでの間に商品が売り切れてしまい在庫がご用意できなくなる場合がございます。</p>
+					</div>
+					<p class="red"><b>余裕を持って「お振り込み」「お支払い」いただきますようお願いいたします。</b></p>
+					
+					<div align="right"><a href="#pageTop">▲&nbsp;上へ</a></div>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		<!-- left bock ########################################################## -->
+		<div id="left-block" class="clearfix">
+			<!-- category menu ########################################################## -->
+			<div id="left-menu">				
+				<div class="category">
+					<h2><p><a href="http://www.akibakan.com/guide/index.html"><strong>ご利用ガイド</strong></a></p></h2>
+					<ul>
+						<li><b><a href="/guide/order/index.html">ご注文について</a></b></li>
+							<p><a href="/guide/order/index.html#01">注文方法について</a></p>
+							<p><a href="/guide/order/index.html#03">在庫確保について</a></p>
+							<p><a href="/guide/order/index.html#04">商品の取置きについて</a></p>
+							<p><a href="/guide/order/index.html#05">予約商品の注文について</a></p>
+							<p><a href="/guide/order/index.html#06">注文状況について</a></p>
+						<br />
+						
+
+						<li><b><a href="/guide/payment/index.html">お支払について</a></b></li>
+							<p><a href="/guide/payment/index.html#01">お支払方法について</a></p>
+							<p><a href="/guide/payment/index.html#02">お支払期限について</a></p>
+						<br />
+
+
+						<li><b><a href="/guide/warranty/index.html">保証について</a></b></li>
+							<p><a href="/guide/warranty/index.html#01">保証の対象について</a></p>
+							<p><a href="/guide/warranty/index.html#02">保証の除外事項について</a></p>
+							<p><a href="/guide/warranty/index.html#03">保証書について</a></p>
+							<p><a href="/guide/warranty/index.html#04">保証期間について</a></p>
+							<p><a href="/guide/warranty/index.html#05">初期不良について</a></p>
+							<p><a href="/guide/warranty/index.html#06">修理について</a></p>
+							<p><a href="/guide/warranty/index.html#07">修理期間について</a></p>
+							<p><a href="warranty/index.html#09">マイナンバーの取り扱いについて</a></p>
+							<p><a href="warranty/index.html#08">初期不良・修理についてのお問合せ</a></p>
+						<br />
+
+						<li><b><a href="/guide/deliver/index.html">お届けについて</a></b></li>
+							<p><a href="/guide/deliver/index.html#01">配送業者について</a></p>
+							<p><a href="/guide/deliver/index.html#02">配送料金について</a></p>
+							<p><a href="/guide/deliver/index.html#03">送料無料商品について</a></p>
+							<p><a href="/guide/deliver/index.html#04">商品の発送について</a></p>
+							<p><a href="/guide/deliver/index.html#05">お取り寄せ商品の発送について</a></p>
+							<p><a href="/guide/deliver/index.html#06">配送希望日時について</a></p>
+							<p><a href="/guide/deliver/index.html#07">配送状況の確認について</a></p>
+							<p><a href="/guide/deliver/index.html#08">お届け先変更について</a></p>
+						<br />
+						
+						
+						<li><b><a href="/guide/return/index.html">交換・返品について</a></b></li>
+							<p><a href="/guide/return/index.html#01">交換について</a></p>
+							<p><a href="/guide/return/index.html#02">返品について</a></p>
+							<p><a href="/guide/return/index.html#03">お客様都合による交換・返品について</a></p>
+							<p><a href="/guide/return/index.html#04">交換・返品の除外について</a></p>
+							<p><a href="/guide/return/index.html#05">交換・返品手続きの流れについて</a></p>
+							<p><a href="/guide/return/index.html#06">返金について</a></p>
+						<br />
+						
+						<li><b><a href="/guide/wage/index.html#01">パーツの取り付けについて</a></b></li>
+							<p><a href="/guide/wage/index.html#02">店頭へのお持ち込みについて</a></p>
+							<p><a href="/guide/wage/index.html#03">発送でのご依頼について</a></p>
+							<p><a href="/guide/wage/index.html#04">複数同時作業について</a></p>
+							<p><a href="/guide/wage/index.html#14">取り付け工賃のお見積りについて</a></p>
+							<p><a href="/guide/wage/index.html#05">取り付け工賃表</a></p>
+						<br />
+
+						<li><b><a href="/guide/shoplist/index.html">店舗案内/お問合せ</a></b></li>
+							<p><a href="/guide/shoplist/index.html#01">店舗情報</a></p>
+							<p><a href="/guide/shoplist/index.html#02">メールでのお問合せについて</a></p>
+							<p><a href="/guide/shoplist/index.html#03">電話でのお問合せについて</a></p>
+						<br />
+
+						<li><b><a href="/guide/purchase/index.html">買い取りについて</a></b></li>
+							<p><a href="/guide/purchase/index.html#01">買い取りの受付について</a></p>
+							<p><a href="/guide/purchase/index.html#02">買い取りの際に必要なもの</a></p>
+							<p><a href="/guide/purchase/index.html#03">買取をご依頼いただく際の注意事項</a></p>
+							<p><a href="/guide/purchase/index.html#04">買い取り金額について</a></p>
+							<p><a href="/guide/purchase/desktop.html">買い取り価格</a></p>
+							<p><a href="/guide/purchase/index.html#05">お持ち込みでの買い取りについて</a></p>
+							<p><a href="/guide/purchase/index.html#06">査定時間について</a></p>
+							<p><a href="/guide/purchase/index.html#07">発送での買い取りについて</a></p>
+							<p><a href="/guide/purchase/index.html#08">発送時の製品の梱包について</a></p>
+							<p><a href="/guide/purchase/index.html#09">買い取りの不成立について</a></p>
+							<p><a href="/guide/purchase/index.html#10">買取成立後の返却について</a></p>
+						<br />
+						
+						<li><b><a href="/guide/help-terms.html">ご利用規約</a></b></li>
+							<p><a href="/guide/help-terms.html">秋葉館ご利用規約</a></p>
+							<p><a href="/guide/help-privacypolicy.html">個人情報保護方針</a></p>
+							<p><a href="/guide/help-regulation.html">特定商取引法に基づく表示</a></p>
+						<br />
+					</ul>
+				</div>
+
+			</div>
+
+	
+		</div>
+	</div>
+	
+
+	<!-- footer ########################################################## -->
+	<div id="footer"><!-- フッタ -->
+<div id="footer">Copyright (C) 
+<?php
+echo date("Y");
+?>
+ Mac専門店 秋葉館.com [akibakan.com] All Rights Reserved.</div></div>
+</div>
+
+</body>
+</html>
+

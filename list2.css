@@ -1,0 +1,233 @@
+/* ###############################################
+
+	Copyright (c) 2009, hiro onoue by Uno2. All rights reserved.
+	version: 1.0.0
+
+################################################ */
+
+@charset "utf-8";
+
+#list-head .switchcss { float: right;}
+
+#switchcss1 {
+	width: 24px;
+	height: 24px;
+	margin-right: 3px;
+	background-image: url(images/data-off.png);
+	display: inline-block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#switchcss1:hover{
+	width: 24px;
+	height: 24px;
+	background-image: url(images/data-on.png);
+	display: inline-block;
+	cursor: pointer;
+}
+
+#switchcss2 {
+	width: 24px;
+	height: 24px;
+	background-image: url(images/pics-on.png);
+	display: inline-block;
+	text-decoration: none;
+	pointer-events: none;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.item-list {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+div.list-img,
+div.list-img a {
+  width: 150px;
+  height: 150px;
+}
+ 
+div.list-img {
+  margin: ,0 10px 0 0;
+  border: 1px solid #CCC;
+  margin-bottom: 10px;
+}
+ 
+div.list-img a {
+  display: table-cell; /* p要素でテーブルの構造を表現 */
+  vertical-align: middle; /* 画像を垂直に */
+  text-align: center; /* 画像を中央に */
+  line-height: 0; /* ボックス内でのp要素の余分な下スペースを消去 */
+}
+ 
+div.list-img a img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.item-data { display: none;}
+
+#list .item-list { display: inline-block; vertical-align: top;}
+
+#list .item-list .list-icons img { margin-bottom: 5px;}
+
+#list span.item-number { display: block;}
+#list .list-price span { white-space: nowrap;}
+
+
+/*===============================================
+	769px以上
+===============================================*/
+
+@media screen and (min-width: 998px) {
+
+#list {
+	margin-left: 260px;
+	font-size: 0px;
+}
+
+#list .item-list { width: 23%; margin-right: 2%;}
+
+div.list-img a {
+  display: table-cell; /* p要素でテーブルの構造を表現 */
+  vertical-align: middle; /* 画像を垂直に */
+  text-align: center; /* 画像を中央に */
+  line-height: 0; /* ボックス内でのp要素の余分な下スペースを消去 */
+}
+ 
+div.list-img a img {
+  max-width: 100%;
+  max-height: 100%;
+}
+ 
+div.list-img a img {
+  _vertical-align: middle; /* 画像を垂直に */
+}
+
+/* IE7 */
+*:first-child+html div.list-img p span {
+  zoom: 1; /* hasLayoutをtrueに設定 */
+  line-height: 100px; /* span要素の行を画像の最大の高さと同じ値に設定 */
+  margin-top: -1px; /* 微調整 */
+}
+ 
+*:first-child+html div.list-img p img {
+  vertical-align: middle; /* 画像を垂直に */
+}
+
+#list-contents #item-area { /* レコメンドスライド */
+	clear: both;
+}
+
+.prdct-name { font-size: 14px; margin-bottom: 10px;}
+
+.list-stock { margin: 5px 0;}
+.list-price{ margin: 5px 0;}
+}
+
+/*===============================================
+	768pxまで
+=============================================== */
+@media screen and (min-width: 769px) and (max-width: 997px) {
+
+#list-contents #list {
+	margin-left: 260px;
+}
+
+#list .item-list { width: 30%; margin-right: 2%;}
+
+/* サムネイル */
+div.list-img,
+div.list-img a {
+  width: 150px;
+  height: 150px;
+}
+ 
+div.list-img {
+  border: 1px solid #CCC;
+}
+ 
+div.list-img a {
+  display: table-cell; /* p要素でテーブルの構造を表現 */
+  vertical-align: middle; /* 画像を垂直に */
+  text-align: center; /* 画像を中央に */
+  line-height: 0; /* ボックス内でのp要素の余分な下スペースを消去 */
+}
+ 
+div.list-img a img {
+  max-width: 100%;
+  max-height: 100%;
+}
+ 
+div.list-img a img {
+  _vertical-align: middle; /* 画像を垂直に */
+}
+ 
+/* IE7 */
+*:first-child+html div.list-img p span {
+  zoom: 1; /* hasLayoutをtrueに設定 */
+  line-height: 100px; /* span要素の行を画像の最大の高さと同じ値に設定 */
+  margin-top: -1px; /* 微調整 */
+}
+ 
+*:first-child+html div.list-img p img {
+  vertical-align: middle; /* 画像を垂直に */
+}
+
+#list-contents #item-area { /* レコメンドスライド */
+	clear: both;
+}
+
+}
+
+/*===============================================
+	768pxまで
+===============================================*/
+
+@media screen and (max-width: 768px) {
+
+#list .item-list { width: 30%; margin-right: 2%;}
+
+/* サムネイル */
+div.list-img,
+div.list-img a {
+  width: 150px;
+  height: 150px;
+}
+ 
+div.list-img {
+  border: 1px solid #CCC;
+}
+ 
+div.list-img a {
+  display: table-cell; /* p要素でテーブルの構造を表現 */
+  vertical-align: middle; /* 画像を垂直に */
+  text-align: center; /* 画像を中央に */
+  line-height: 0; /* ボックス内でのp要素の余分な下スペースを消去 */
+}
+ 
+div.list-img a img {
+  max-width: 100%;
+  max-height: 100%;
+}
+ 
+div.list-img a img {
+  _vertical-align: middle; /* 画像を垂直に */
+}
+ 
+/* IE7 */
+*:first-child+html div.list-img p span {
+  zoom: 1; /* hasLayoutをtrueに設定 */
+  line-height: 100px; /* span要素の行を画像の最大の高さと同じ値に設定 */
+  margin-top: -1px; /* 微調整 */
+}
+ 
+*:first-child+html div.list-img p img {
+  vertical-align: middle; /* 画像を垂直に */
+}
+}

@@ -1,0 +1,1227 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,table,td,th,pre,code,form,fieldset,legend,input,select,textarea,p,blockquote,th,td {
+	margin: 0;
+	padding: 0;
+	/*font-family:"ヒラギノ角ゴ Pro W4", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;*/
+}
+
+body {
+	margin: auto;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	font: 14px/1.31  /* "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "ＭＳ Ｐゴシック",*/ sans-serif!important;
+	*font-size: small;
+	*font: x-small;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}wage
+
+fieldset,img {
+	border: 0;
+}
+
+address,caption,cite,code,dfn,em,th,var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+li {
+	list-style: none;
+}
+
+caption,th {
+	text-align: left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+h2.px18 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+h2.px18 span {
+	font-size: 24px;
+	font-weight: bold;
+	color :#f00;
+}
+
+#container-mini h2 { margin-bottom: 20px; }
+
+input, textarea, select {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+a {  color: #005dab; text-decoration: none; }
+a:hover { color: #E00!important; text-decoration: underline; }
+
+
+/* #####################################
+
+	Font-size Adjustment
+	
+	77% = 10px	| 	122% = 16px	|	167% = 22px	
+	85% = 11px	|	129% = 17px	|	174% = 23px
+	92% = 12px	|	136% = 18px	|	182% = 24px
+	100% = 13px	|	144% = 19px	|	189% = 25px
+	107% = 14px	|	152% = 20px	|	197% = 26px
+	114% = 15px	|	159% = 21px	|
+
+##################################### */
+.px10 {	font-size: 77%; line-height: 100%; }
+.px11 {	font-size: 85%; line-height: 100%; }
+.px12 {	font-size: 92%; line-height: 100%; }
+.px14 {	font-size: 107%; line-height: 100%; }
+.px15 {	font-size: 114%; line-height: 100%; }
+.px16 {	font-size: 122%; line-height: 100%; }
+.px18 {	font-size: 136%; line-height: 100%; }
+.px20 {	font-size: 152%; line-height: 100%; }
+.px22 {	font-size: 167%; line-height: 100%; }
+.px24 {	font-size: 182%; line-height: 100%; }
+
+body {
+}
+
+table {
+	font-size: inherit;
+	font: 100%;
+}
+
+* {
+	font-size: 100%;
+}
+
+.align-left { text-align: left; }
+
+
+/* ########################################
+
+	carousel
+
+######################################## */
+
+.carousel {
+	width: 570px;
+	position: relative;
+	margin: auto;
+	position: relative;
+}
+
+.carousel ul {
+	margin: 0;
+	padding: 0;
+}
+
+.carousel li {
+	margin: 0;
+	list-style-type: none;
+	width: 129px;
+	border: 1px solid #000;
+	float: left;
+	height: 140px;
+}
+a.prev, a.next {
+	background: url(Circular,%20Responsive%20jQuery%20Carousel%20-%20CarouFredSel_files/arrow.png) no-repeat transparent;
+	width: 18px;
+	height: 18px;
+	display: block;
+	position: absolute;
+	top: 40px;
+}
+a.prev {			left: 0px;
+					background-position: 0 0; }
+a.prev:hover {		background-position: 0 -18px; }
+
+a.next {			right: 2px;
+					background-position: -18px 0; }
+a.next:hover {		background-position: -18px -18px; }
+a.prev.disabled, a.next.disabled {
+	cursor: pointer;
+}
+
+a.prev span, a.next span {
+	display: none!important;
+}
+
+.pagination {
+	text-align: center;
+}
+.pagination a {
+	background: url(Circular,%20Responsive%20jQuery%20Carousel%20-%20CarouFredSel_files/arrow.png) 0 -36px no-repeat transparent;
+	width: 7px;
+	height: 7px;
+	margin: 5px 5px 0 0 ;
+	display: inline-block;
+}
+.pagination a.selected {
+	background-position: -7px -36px;
+	cursor: default;
+}
+.pagination a span {
+	display: none!important;
+}
+
+/* ########################################
+
+	container
+
+######################################## */
+#container {
+	width: 980px;
+	margin: auto;
+	padding: 0;
+	background-color: #FFF;
+}
+
+#contents {
+	float: right;
+	width: 770px;
+}
+
+#top-center-block {
+	float: left;
+	width: 600px;
+}
+
+#top-right-block {
+	float: right;
+	width: 160px;
+}
+
+#left-block {
+	width: 200px;
+}
+
+/* ########################################
+
+	commonness
+
+######################################## */
+.red { color: #F00; }
+.bold { font-weight: bold; }
+.shift-right { float: right; }
+.shift-left { float: left; }
+.hidden { visibility: hidden; display: none; }
+
+div#pan {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.pagetop { margin-top: 10px; text-align: right; }
+
+h1#category-name {
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom: 1px solid #000;
+	margin-bottom: 5px;
+}
+
+.pointer { cursor: pointer; }
+
+/* ########################################
+
+	header/footer
+
+######################################## */
+#header { margin: 20px 0; font-size: 12px;}
+#header a { text-decoration: none;}
+#header a:hover { text-decoration: underline;}
+
+
+#header-rogo {
+	float: left;
+	display: block;
+}
+
+#header-inform {
+	border: 1px solid #000;
+	margin-left: 160px;
+	height: 100%;
+	background: #ccc;
+	height: auto;
+	background: linear-gradient(#f2f2f2, #999);
+	background: -moz-linear-gradient(top, #f2f2f2, #999);　/* Firefox用 */  
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#999));　/* Safari,Google Chrome用 */  
+	filter: progid:DXImageTransform.Microsoft .gradient(GradientType=0,startColorstr='#fff2f2f2f2', endColorstr='#ff999999');
+}
+
+#header-inform-mid {
+	text-align: right;
+}
+
+#header-inform-top {
+	border-bottom: 1px solid #000;
+	padding: 0 10px;
+}
+
+#header-inform-top { height: 45px;}
+
+#header-userlogin {
+	float: left;
+	margin-top: 4px;
+	line-height: 150%;
+}
+
+#header-information {
+	text-align: right;
+	line-height: 43px;
+	vertical-align: middle;
+}
+
+#header-inform-bottom {
+	height: 55px;
+	line-height: 55px;
+	vertical-align: middle;
+	border-bottom: 1px solid #000;
+}
+
+#header-inform-bottom form {
+	margin: auto;
+	padding: 0px!important;
+	margin-left: 10px;
+	float: left;
+}
+
+*html #header-inform-bottom form { vertical-align: middle; margin-top: 15px;}
+
+#header-inform-bottom form #keyword { width: 280px; height: 22px;}
+#header-inform-bottom form #button { font-size: 14px; margin-top: 1px; cursor: pointer;}
+
+#header-cart-button {
+	float: right;
+}
+
+#header-cart-button a {
+	background-image: url(/images/upload/embed/cart-button.png);
+	background-repeat: no-repeat;
+	width: 174px;
+	height: 39px;
+	border: 0;
+	display: block;
+	margin: 6px 10px;
+}
+
+	#header-cart-button a:hover { background-position: 0 -39px; }
+	#header-cart-button a:active { background-position: 0 -78px; }
+
+#header-cart-button span {
+	visibility: hidden;
+	display: none;
+}
+
+
+#header-bottom-menu {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	background: #ff0;
+}
+
+#header-bottom-menu ul { margin: 0; padding: 0;}
+#header-bottom-menu li {
+	margin: 0;
+	float: left;
+	border-right: 1px solid #000;
+	width: 162px;
+	list-style-type: none!important;
+}
+
+#header-bottom-menu li a {
+	background: #ff0;
+	display: block;
+	padding: 5px 20px;
+	color: #00427a;
+	text-decoration: none;
+	text-align: center;
+}
+
+#header-bottom-menu li a:hover {
+	background: #00427a;
+	color: #FFF;
+	text-decoration: underline;
+}
+
+#header-bottom-menu li:last-child{ border: none; width: 166px;}
+	#header-bottom-menu li {
+		width: expression(this.__isLastChild?'166px');
+		border-right:expression((this.__isLastChild = (this.parentNode.children.item(this.parentNode.children.length-1) == this))?'none':'1px solid #000');
+		padding-right:expression(this.__isLastChild?'0':'15px');
+	}
+
+
+#footer {
+	font-size: 12px;
+	text-align: center;
+	margin: 50px 0 10px 0;
+}
+/* ########################################
+
+	left menu
+
+######################################## */
+#left-menu { font-size: 14px;}
+
+#left-menu .category {
+	border: 1px solid #AAA;
+	margin-bottom: 30px;
+    border-radius: 5px;        /* CSS3草・*/  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+	border-bottom: none;
+}
+
+
+/*#left-menu p {
+	display: block;
+	text-align: center;
+	width: 188px;
+	padding: 5px;
+	border: 1px solid #AAA;
+}*/
+
+#left-menu h2 {
+	font-weight: bold;
+}
+
+#left-menu h2 a {
+	display: block;
+	width: 178px;
+	text-decoration: none;
+	background-color: #EEE;
+	background: linear-gradient(,#FDFDFD 0%, #E4E4E4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FDFDFD), to(#E4E4E4));
+	background: -moz-linear-gradient(-90deg, #FDFDFD 0%, #E4E4E4 100%);
+	padding: 10px;
+	border-top: none;
+	color: #000;
+    border-radius: 5px;        /* CSS3草・*/  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 5px;   /* Firefox用 */  
+	border-bottom: 1px solid #AAA;
+}
+
+#left-menu h2 a:hover {
+	background-color: #FF0;
+	background: linear-gradient(,#ddd 0%, #fff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#fff));
+	background: -moz-linear-gradient(-90deg, #ddd 0%, #fff 100%);
+}
+
+#left-menu  ul {
+	background-color: #FDFDFD;
+	border-top: none;
+	padding: 5px 0;
+    border-radius: 5px;        /* CSS3草・*/  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */  
+	border-bottom: 1px solid #AAA;
+}
+
+#left-menu ul li:hover {
+	background-color: #FF0;
+}
+
+#left-menu ul li a{
+	display: block;
+	padding: 5px 10px;
+}
+
+
+#left-menu ul p {
+	text-align: left;
+	padding: 4px 5px 4px 15px;
+}
+
+#left-menu ul p a {	display: block;}
+#left-menu ul p:hover {	background-color: #FF0;}
+
+/* ########################################
+
+	top-center
+
+######################################## */
+#banner { margin-bottom: 30px;}
+
+/* topics ****************************** */
+#top-topics { font-size: 12px;}
+#top-topics h2 {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px;
+	background: #ee0;
+	margin-bottom: 20px;
+}
+
+#top-topics {}
+
+#top-topics img {
+	width: 64px;
+	margin: 0 0 10px 10px;
+}
+
+#top-topics p.px10,
+#top-topics p.px11 { margin-bottom: 5px;}
+
+#top-topics div {
+	border-bottom: 1px solid #666;
+	padding-bottom: 5px;
+	margin: 5px 0;
+}
+
+#top-topics img { float: right;}
+
+#top-topics div p {
+	font-weight: bold;
+	margin: 10px 80px 10px 0;
+}
+
+#top-topics div p span { color: #e00; font-size: 14px;}
+#top-topics div p span s { font-size: 11px;}
+
+
+/* ########################################
+
+	top-right
+
+######################################## */
+#top-right-block {
+	font-size: 13px;
+	text-align: center;
+    border-radius: 5px;        /* CSS3草・*/  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */  
+}
+
+#top-right-block p { padding: 5px;}
+#top-right-block .info-title {
+	font-size: 107%;
+	font-weight: bold;
+	color: #FFF;
+	margin-bottom: 10px;
+}
+#top-right-block p.tel01 {
+	letter-spacing: -0.1em;
+	font-size: 20px;
+}
+
+
+#info-red {
+	border: 1px solid #F00;
+	margin-bottom: 20px;
+}
+#info-red p.info-title { background-color: #F00;}
+
+#info-black {
+	border: 1px solid #000;
+	margin-bottom: 20px;
+}
+#info-black p.info-title { background-color: #000;}
+
+
+/* ########################################
+
+	list
+
+
+######################################## */
+/* list1 category list ************************************** */
+#list-block div.category-list1 ul {
+	margin: 10px 0;
+	border-bottom: 1px solid #000;
+
+	padding-bottom: 10px;
+}
+
+#list-block div.category-list1 ul li {
+	display: -moz-inline-box; /* firefox 2 */
+	display: inline-block;
+	/display: inline; /* IE6,IE7 */
+	/zoom: 1;
+	vertical-align: top;
+	font-size: 110%;
+	width: 177px;
+	/width: 180px;
+	background-image: url(/images/upload/top/arrow-red.png);
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+}
+
+#list-block div.category-list1 ul li a {
+	display: block;
+	padding: 5px 5px;
+}
+#list-block div.category-list1 ul li a:hover { background-color: #FF0;}
+
+/* list2 category list ************************************** */
+#list-block div.category-list2 ul {
+	margin: 10px 0;
+	border-bottom: 1px solid #000;
+
+	padding-bottom: 10px;
+}
+
+#list-block div.category-list2 ul li {
+	display: -moz-inline-box; /* firefox 2 */
+	display: inline-block;
+	/display: inline; /* IE6,IE7 */
+	/zoom: 1;
+	vertical-align: top;
+	font-size: 110%;
+	width: 177px;
+	/width: 180px;
+	background-image: url(/images/upload/top/arrow-red.png);
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+}
+
+#list-block div.category-list2 ul li a {
+	display: block;
+	padding: 5px 5px;
+}
+#list-block div.category-list2 ul li a:hover { background-color: #FF0;}
+
+/* page down */
+#page-down ul { margin: 0 0 10px; text-align: center; }
+#page-down ul li { display: inline; margin: 0 2px; padding: 0; }
+#page-down ul li b,
+#page-down ul li a,
+#page-down ul li span{
+	display: inline-block;
+	margin-bottom: 5px;
+	padding: 1px 8px;
+	background: #FFF;
+	border: 1px solid #AAA;
+	text-decoration: none;
+	vertical-align: middle;
+}
+#page-down ul li b { font-weight: bold; background-color: #EEE; }
+#page-down ul li a:hover { background: #FF0; border-color: #E00; }
+
+#item-list div.item-box {
+	margin-bottom: 20px;
+}
+
+#item-list div.item-box div.item-name-block {
+	font-size: 110%;
+	font-weight: bold;
+	background-color: #E8E8E8;
+	margin-bottom : 10px;
+}
+
+#item-list div.item-box div.item-name-block p.item-name a {
+	display: block;
+	float: left;
+	padding: 8px;
+	color: #000;
+	width: 80%;
+	border: 1px solid #AAA;
+	/*background-color: #ff3;*/
+	background-image:: line-gradient(,#FFF 0%, #DDD 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#DDD));
+	background: -moz-linear-gradient(-90deg, #FFF 0%, #DDD 100%);
+	
+	
+}
+
+#item-list div.item-box div.item-name-block p.item-name a:hover {
+	border: 1px solid #F00;	
+}
+
+#item-list div.item-box div.item-name-block p.price {
+	font-size: 20px;
+	line-height: 16px;
+	color: #F00;
+	float: right;
+	padding: 5px 10px 0 0;
+	text-align:right;
+}
+
+#item-list div.item-box div.item-name-block p.price span {
+	font-size: 10px;
+	font-weight: normal;
+	color: #000;
+}
+
+#item-list div.item-box div.item-image { float: left;}
+
+
+#item-list div.item-box div.item-image a {
+	display: block;
+	border: solid 1px #ccc;
+	border-collapse: collapse;
+	margin-bottom: 15px;
+	width: 152px;
+	/line-height: 150px;
+	/width: 154px;
+	/height: 150px;
+}
+
+#item-list div.item-box div.item-image a:hover {
+	border: solid 1px #E00;
+}
+
+#item-list div.item-box div.item-image a p {
+	display: table-cell;
+	/display: inline;
+	height: auto;
+	text-align: center;
+	vertical-align: middle;
+	width: 150px !important;
+	width: auto;
+	height: 150px !important;
+	/zoom: 1;
+}
+#item-list div.item-box div.item-image a p img {
+	border: solid 1px #fff;
+}
+
+#item-list div.item-box div.item-image a span {
+	/display: inline-block;
+}
+
+#item-list div.item-box div.item-data {
+	margin-left: 165px;
+	font-size: 12px;
+}
+
+#item-list div.item-box div.item-data table {
+	width: 100%;
+	margin-bottom : 10px;
+}
+#item-list div.item-box div.item-data th,#item-list div.item-box div.item-data td { border: 1px solid #000;}
+#item-list div.item-box div.item-data th {
+	padding: 2px 5px;
+	width: 18%;
+}
+
+#item-list div.item-box div.item-data td {
+	padding: 2px 5px;
+	width: 32%;
+}
+
+#item-list div.item-box div.item-data th.y,#item-list div.item-box div.item-data td.y { background-color: #F5F5F5;}
+
+#item-list div.item-box div.item-description {
+	float: left;
+	width: 340px;
+}
+
+#item-list div.item-box div.tel-list { float: right;}
+
+/* ########################################
+
+	detail
+
+######################################## */
+#item-detail div.item-box {
+	margin-bottom: 20px;
+}
+
+#item-detail div.item-box div.item-name-block {
+	font-size: 120%;
+	font-weight: bold;
+	background-color: #E8E8E8;
+	margin-bottom : 20px;
+}
+
+#item-detail div.item-box div.item-name-block p.item-name strong {
+	display: block;
+	padding: 8px;
+	color: #000;
+	border: 1px solid #AAA;
+	/*background-color: #FF0;*/
+	background: line-gradient(,#FFF 0%, #DDD 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#DDD));
+	background: -moz-linear-gradient(-90deg, #FFF 0%, #DDD 100%);
+}
+
+#item-detail div.item-box div.item-name-block p.item-name a:hover { border: 1px solid #F00;}
+
+#item-detail div.item-box div#item-block { margin-bottom: 30px;}
+
+#item-detail div.item-box div.item-image { float: left;}
+#item-detail div.item-box div.item-image img.main { border: 1px solid #CCC; width: 440px!important; }
+
+#item-detail div.item-box div.item-data {
+	font-size: 13px;
+	margin-left: 455px;
+}
+
+#item-detail div.item-box div.item-data p.price {
+	font-size: 26px;
+	line-height: 20px;
+	color: #F00;
+	padding: 5px 0px 0 0;
+	/*text-align:right;*/
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+#item-detail div.item-box div.item-data p.price span {
+	font-size: 10px;
+	font-weight: normal;
+	color: #000;
+}
+
+#item-detail div.item-box div.item-data p.price b {
+	font-size:16px;
+	color: #000;
+}
+
+#item-detail div.item-box div.item-data p.price span {
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
+}
+
+#item-detail div.item-box div.item-data p.twitter {
+	text-align: right;
+	margin-bottom: 30px;
+}
+
+#detail-block div.detail_img {
+	margin-bottom: 30px;
+	margin-right:5px;
+}
+
+#detail-block .detail_img img {
+	border: 1px solid #000;
+	padding:3px;
+	height: 60px;
+	width: 60px;
+}
+
+#detail-block .detail_img img:hover { cursor: pointer; }
+
+#item-detail div.item-box table {
+	margin-bottom : 10px;
+}
+#item-detail div.item-box th,#item-detail div.item-box td { border: 1px solid #000;}
+
+#item-detail div.item-box th {
+	padding: 2px 5px;
+	width: 18%;
+}
+
+#item-detail div.item-box td {
+	padding: 2px 5px;
+	width: 32%;
+}
+
+#item-detail div.item-box th.y,#item-detail div.item-box td.y { background-color: #F5F5F5;}
+
+#item-detail div.item-box div.item-description { margin-bottom: 15px;}
+#item-detail div.item-box div.tel-detail { float: right;}
+
+/* ########################################
+
+	help
+
+######################################## */
+#help-block div#left-box { width: 370px; float: left;}
+#help-block div#right-box { width: 370px; float: right;}
+
+#help-block h1 { margin-bottom: 20px;}
+#help-block h2 {
+	font-size: 120%;
+	font-weight: bold;
+	margin-bottom: 15px;
+	border: 1px solid #AAA;
+	padding: 8px 10px;
+	background-color: #EEE;
+    border-radius: 5px;        /* CSS3草・*/  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+	background: line-gradient(,#fff 0%, #eee 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+	background: -moz-linear-gradient(-90deg, #fff 0%, #eee 100%);
+}
+
+.help-eachblock {
+	margin-bottom: 10px;
+}
+
+.help-eachblock ul.eachmenu {
+	width: 50%;
+	float: left;
+}
+
+.help-eachblock ul.eachmenu li {
+	font-size: 107%;
+	margin-bottom: 8px;
+}
+
+.help-eachblock ul.eachmenu li ul li {
+	list-style-type: circle!important;
+	font-size: 100%;
+}
+
+.help-eachblock ul {
+	margin-bottom: 8px;
+}
+
+.help-eachblock li {
+	list-style-type: disc;
+	margin: 5px 0 5px 15px;
+}
+
+.help-eachblock li p {
+	margin: 4px 0;
+}
+
+.help-eachblock p {
+	margin-bottom: 8px;
+}
+
+.help-box ul.number { margin-left: 5px;}
+.help-box ul.number li {
+	list-style-type: decimal!important;
+	margin: 7px 20px;
+	padding-left: 0px;
+}
+
+
+/* help-payment-bank */
+.help-eachblock ul.eachmenu ul.square li {
+	list-style-type: square!important;
+	margin-left: 20px;
+}
+
+#help-block a h2 {
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 15px;
+	border: 1px solid #AAA;
+	padding: 8px 10px;
+	background-color: #EEE;
+    border-radius: 5px;        /* CSS3草・*/  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+	background: line-gradient(,#eee 0%, #fff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#fff));
+	background: -moz-linear-gradient(-90deg, #eee 0%, #fff 100%);
+}
+
+#help-block a h2:hover {
+	color: #F00;
+}
+
+#help-block h3 {
+	font-weight: bold;
+	font-size: 120%;
+	margin-bottom: 5px;
+}
+
+#help-block p { line-height: 1.5em;}
+
+#help-block ul { margin-bottom: 10px;}
+#help-block li {
+	list-style: disc;
+	margin: 5px 0 5px 16px;
+}
+
+#help-block div.help-box { line-height: 150%; margin-bottom: 20px;}
+#help-block div.help-box p { margin-bottom: 5px; }
+#help-block div.help-box hr {
+	border: none;
+	border-bottom: 1px dashed #999;
+	margin: 20px 0;
+}
+
+#help-block div.help-box img { margin-bottom: 5px;}
+#help-block div.help-box img.border { border: 1px solid #000;}
+
+#help-block div.help-box li a { }
+
+.shippingcampany-list { margin: 10px 30px;}
+
+#help-block table { margin-bottom: 10px;}
+#help-block th,#help-block td { border: 1px solid #000; padding: 5px;}
+#help-block th {
+	font-weight: bold;
+	width: 20%;
+}
+
+
+/* delivery block ####################### */
+.help-box table.price-list { width: 100%;}
+.help-box table.price-list th,
+.help-box table.price-list td {
+	padding: 5px;
+	text-align: center;
+	width: auto!important;
+}
+
+.help-box table.price-list th { background-color: #EEE; }
+.help-box table.price-list td { background-color: #FFF; }
+.help-box table.price-list td.cel02 { background-color: #FFF!important; }
+.help-box table.price-list tr.area td { background-color: #ffffaa; }
+.help-box table.price-list tr.cel01 td { background-color: #ffffcb; }
+
+.help-box table.price-list td.left { text-align: left!important;}
+.help-box table.price-list td p { margin: 0; padding: 2px;}
+.help-box table.price-list td .shipping {
+	background: #fff100;
+	color: #000;
+	line-height: 110%;
+}
+.help-box table.price-list td .receipt {
+	background: #e00;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.help-box table.width7 td { width: 7.6923076%!important;}
+
+
+.help-box div.link-button {
+	margin: auto;
+	width: 48%;
+}
+
+.help-box .link-button a {
+	display: block;
+	color: #000;
+	padding: 5px 0;
+	border: 1px solid #000;
+    border-radius: 10px;        /* CSS3草・*/  
+    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 10px;   /* Firefox用 */  
+    background: -moz-linear-gradient(top, #f1f1f1, #aaa); /* Firefox用 */  
+	background: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(#aaa)); /* Safari,Google Chrome用 */
+}
+
+.help-box .link-button a:hover {
+	background: #aaa;
+	color: #000!important
+	;
+}
+
+.help-box .link-button p {
+	font-family:"ヒラギノ角ゴ std","headfont", sans-serif;
+	text-align: center;
+	line-height: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 100%;
+}
+
+.help-box .link-button p span {
+	font-size: 16px;
+	line-height: 100%;
+}
+
+/* peyment block ####################### */
+div.paymentcampany-list {
+	display: -moz-inline-box; /* firefox 2 */
+	display: inline-block;
+	/display: inline; /* IE6,IE7 */
+	/zoom: 1;
+	width: inherit;
+	padding: 5px;
+	margin: 10px 0;
+	text-align: center;
+}
+div.paymentcampany-list img {
+	margin-bottom: 8px;
+}
+
+/* wage block ####################### */
+.wage table td.title {
+	text-align: center;
+	background: #ddd;
+	background: line-gradient(,#ddd 0%, #fff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ddd));
+	background: -moz-linear-gradient(-90deg, #fff 0%, #ddd 100%);
+}
+.wage table td.title h3 { margin-top: 5px;}
+
+.wage table td { line-height: 150%;}
+.wage table th {
+	font-weight: bold;
+	text-align: center;
+}
+
+.wage table tr:nth-child(2n+1) { background: #f8f8f8;}
+
+.wage table td:nth-of-type(2),.wage table td:nth-of-type(3),.wage table td:nth-of-type(4) {
+	padding: 5px 10px!important;
+}
+
+.wage table td table { margin: 0px!important;}
+.wage table td table td {
+	width: 100%;
+	border-color: #aaa!important;
+}
+
+.wage table td table tr:nth-child(2n+1) { background: #fff;}
+
+/* purchase block ####################### */
+.purchase td.head {
+	font-weight: bold;
+	background: #e6e6e6;}
+
+/* ########################################
+
+	mailform
+
+######################################## */
+div.help-box table#mailform {
+	width: 100%;
+	margin: auto;
+}
+
+div.help-box table#mailform a:link,
+div.help-box table#mailform a:visited {
+	color: #00d;
+	text-decoration: none;
+}
+
+div.help-box table#mailform a:hover {
+	color: #f22;
+	text-decoration: underline;
+}
+
+div.help-box table#mailform form {
+	margin: 0px;
+}
+
+div.help-box table#mailform input,
+div.help-box table#mailform select,
+div.help-box table#mailform textarea {
+	font-size: 13px;
+}
+
+div.help-box table#mailform td,
+div.help-box table#mailform th {
+	font-size: 13px;
+	line-height: 140%;
+	text-align: left;
+}
+
+div.help-box table#mailform td {
+	padding: 10px;
+	border-left: 1px solid #000;
+}
+
+div.help-box table#mailform td p {
+	margin: 7px 0;
+}
+
+div.help-box table#mailform th {
+	font-weight: normal;
+	white-space: nowrap;
+	padding: 5px;
+	width: 150px;
+}
+
+
+div.help-box table#mailform th span {
+	color: #f00;
+}
+
+div.help-box table#mailform .submit {
+	text-align: center;
+}
+
+div.help-box table#mailform .submit input {
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+}
+
+div.help-box table#mailform .type-red {
+	color: red;
+}
+
+div.help-box table#mailform .ERR {
+	color: red;
+}
+
+
+/* フォーム */
+div.help-box table#mailform #name,
+div.help-box table#mailform #kana,
+div.help-box table#mailform #address2,
+div.help-box table#mailform #address3,
+div.help-box table#mailform #email,
+div.help-box table#mailform #emailcheck,
+div.help-box table#mailform #subject,
+div.help-box table#mailform #corp,
+div.help-box table#mailform #model-number{
+	width: 350px;
+	height:20px;
+}
+
+div.help-box table#mailform #address0 {
+	margin-bottom: 3px;
+}
+
+div.help-box table#mailform #zip0 {
+	width: 30px;
+}
+
+div.help-box table#mailform #zip1 {
+	width: 40px;
+}
+
+div.help-box table input,div.help-box table select {
+	height: 20px;
+}
+
+div.help-box table#mailform #tel0,
+div.help-box table#mailform #tel1,
+div.help-box table#mailform #tel2{
+	width: 40px;
+}
+
+div.help-box table#mailform #number { width: 20px; text-align: right;}
+
+selectdiv.help-box table#mailform #subject option { }
+
+div.help-box table#mailform #orderid { 
+	width: 120px;
+	height: 20px;
+}
+div.help-box table#mailform #message {
+	width: 500px;
+	height: 100px;
+}
+
+/* ########################################
+
+	clearfix
+
+######################################## */
+.clearfix:after {
+  content: "."; 
+  display: block;  /* ブロックレベル要素 */
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  min-height: 1px;
+}
+
+* html .clearfix {
+  height: 1px;
+  /*\*//*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}
